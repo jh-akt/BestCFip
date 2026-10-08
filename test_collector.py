@@ -86,6 +86,18 @@ class CollectorTests(unittest.TestCase):
         rows = collects.parse_source("IPDB", b'{"104.17.1.1:443":{"colo":"HKG"},"[2606:4700::1234]:443":{"colo":"SIN"}}')
         self.assertEqual({row["ip"] for row in rows}, {"104.17.1.1", "2606:4700::1234"})
 
+    def test_bracketed_ipv6_text_is_not_json(self):
+        rows = collects.parse_source("CMLiussv6", b"[2606:4700::1234]:443#CM\n[2a06:98c1::1234]:443#CM\n")
+        self.assertEqual({row["ip"] for row in rows}, {"2606:4700::1234", "2a06:98c1::1234"})
+        self.assertTrue(all(row["format"] == "text-list" for row in rows))
+
+    def test_actual_field_names_preserve_measurement_and_creation_time_separately(self):
+        result = collects.metadata({"平均延迟": "67.92", "测速时间": "2026-10-08 16:49:04", "createdTime": "2026-09-30 01:30:01"}, ("data", "CM", "3"))
+        self.assertEqual(result["rtt"], "67.92")
+        self.assertEqual(result["carrier"], "移动")
+        self.assertEqual(result["observed_at"], "2026-10-08 16:49:04")
+        self.assertEqual(result["source_record_created_at"], "2026-09-30 01:30:01")
+
     def test_merge_sources_filter_ranges_and_match_output(self):
         with tempfile.TemporaryDirectory() as folder:
             catalog = run(folder, {"WeTest": TABLE, "IPDB": b'[{"ip":"104.24.213.11","colo":"HKG"},{"ip":"8.217.206.24"}]'})
