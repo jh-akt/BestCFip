@@ -85,6 +85,28 @@ class CollectorTests(unittest.TestCase):
     def test_json_address_keys(self):
         rows = collects.parse_source("IPDB", b'{"104.17.1.1:443":{"colo":"HKG"},"[2606:4700::1234]:443":{"colo":"SIN"}}')
         self.assertEqual({row["ip"] for row in rows}, {"104.17.1.1", "2606:4700::1234"})
+        self.assertEqual({row["metadata"]["colo"] for row in rows}, {"HKG", "SIN"})
+
+    def test_json_records_with_separate_non_443_port_are_rejected(self):
+        rows = collects.parse_source("VPS", b'[{"ip":"104.17.1.1","port":8443},{"ip":"104.17.1.2","port":443}]')
+        self.assertEqual([row["ip"] for row in rows], ["104.17.1.2"])
+
+    def test_json_wrapped_html_source(self):
+        rows = collects.parse_source("WeTest", json.dumps(TABLE.decode()).encode())
+        self.assertEqual(len(rows), 2)
+        self.assertEqual({row["metadata"]["colo"] for row in rows}, {"LAX", "FRA"})
+
+    def test_data_row_using_th_is_not_a_column_header(self):
+        table = TABLE.replace('<td>联通</td>'.encode(), '<th>联通</th>'.encode()).replace('<td>电信</td>'.encode(), '<th>电信</th>'.encode())
+        rows = collects.parse_source("Uouin", table)
+        self.assertEqual(len(rows), 2)
+        self.assertEqual({row["metadata"]["carrier"] for row in rows}, {"联通", "电信"})
+
+    def test_colo_lookup_placeholder_is_not_a_colo_measurement(self):
+        value = collects.metadata({"Colo": "查询"})
+        self.assertNotIn("colo", value)
+        self.assertEqual(value["colo_raw"], "查询")
+        self.assertEqual(value["source_fields"]["Colo"], "查询")
 
     def test_bracketed_ipv6_text_is_not_json(self):
         rows = collects.parse_source("CMLiussv6", b"[2606:4700::1234]:443#CM\n[2a06:98c1::1234]:443#CM\n")
