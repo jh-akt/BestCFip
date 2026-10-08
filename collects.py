@@ -114,6 +114,13 @@ def metadata(fields, context=()):
             if str(part).lower() in CARRIERS:
                 result["carrier"] = CARRIERS[str(part).lower()]
                 break
+    if "colo" in result:
+        result["colo_raw"] = result["colo"]
+        if re.fullmatch(r"[A-Za-z]{3}", result["colo"]):
+            result["colo"] = result["colo"].upper()
+        else:
+            # A lazy lookup button such as Uouin's "查询" is not a measured colo.
+            result.pop("colo")
     if "rtt" in result:
         number = re.fullmatch(r"([\d.]+)\s*(ms|毫秒)", result["rtt"], re.I)
         if number:
@@ -179,9 +186,18 @@ class Tables(HTMLParser):
 def parse_source(source, body):
     """Parse JSON records, table rows, or published text data without JavaScript."""
     text = body.decode("utf-8-sig", errors="replace")
+    if text.lstrip().startswith('"'):
+        # WeTest currently returns its HTML as a JSON string, including escaped tags.
+        decoded = json.loads(text)
+        if not isinstance(decoded, str):
+            raise ValueError("unexpected JSON scalar source")
+        text = decoded
     rows = []
 
     def add(ips, fields, kind, context=()):
+        if any(key_name(key) in {"port", "端口", "端口号"} and str(value).strip() != "443"
+               for key, value in fields.items()):
+            return
         for ip in ips:
             rows.append({"ip": ip, "metadata": metadata(fields, context), "format": kind})
             if len(rows) > MAX_ROWS:
@@ -202,7 +218,9 @@ def parse_source(source, body):
                 for key, child in value.items():
                     key_ips = addresses(key)
                     if key_ips and TOKEN.fullmatch(str(key).strip()):
-                        add(key_ips, fields, "json-record", context + (key,))
+                        child_fields = {str(k): v for k, v in child.items()
+                                        if isinstance(v, (str, int, float, bool))} if isinstance(child, dict) else {}
+                        add(key_ips, {**fields, **child_fields}, "json-record", context + (key,))
                     if isinstance(child, (dict, list)):
                         walk(child, context + (key,), fields)
                     elif isinstance(child, str):
@@ -223,7 +241,7 @@ def parse_source(source, body):
         headers = DEFAULT_COLUMNS.get(source, [])
         for cells, header in parser.rows:
             ips = [ip for cell in cells for ip in addresses(cell)]
-            if header or (not ips and cells and any(key_name(cell) in {"ip", "address", "优选地址", "优选ip"} for cell in cells)):
+            if not ips and (header or (cells and any(key_name(cell) in {"ip", "address", "优选地址", "优选ip"} for cell in cells))):
                 headers = cells
                 continue
             if ips:
