@@ -126,7 +126,8 @@ class CollectorTests(unittest.TestCase):
             self.assertEqual(catalog["counts"]["ipv4"], 1)
             self.assertEqual(len(catalog["candidates"][0]["observations"]), 3)
             self.assertFalse(catalog["candidates"][0]["anycast_per_address_verified"])
-            self.assertEqual((Path(folder) / "ipv4.txt").read_text(), "104.24.213.11:443\n")
+            self.assertEqual(catalog["candidates"][0]["colos"], ["FRA", "HKG", "LAX"])
+            self.assertEqual((Path(folder) / "ipv4.txt").read_text(), "104.24.213.11:443#colo=FRA,HKG,LAX\n")
             self.assertEqual(catalog, json.loads((Path(folder) / "candidates.json").read_text()))
             rejected = next(row for row in catalog["sources"] if row["source"] == "IPDB")
             self.assertEqual(rejected["outside_official_ranges"], 1)
@@ -156,12 +157,37 @@ class CollectorTests(unittest.TestCase):
             observation = candidate["observations"][0]
             self.assertTrue(observation["retained"])
             self.assertEqual(observation["fetched_at"], "2026-10-08T12:00:00+00:00")
+            self.assertEqual(candidate["colos"], ["HKG"])
+            self.assertIn("104.17.1.2:443#colo=HKG\n", (Path(folder) / "ipv4.txt").read_text())
 
     def test_source_success_replaces_old_data(self):
         with tempfile.TemporaryDirectory() as folder:
             run(folder, {"IPDB": b'["104.17.1.1"]'})
             second = run(folder, {"IPDB": b'["104.17.1.2"]'})
             self.assertEqual([row["ip"] for row in second["candidates"]], ["104.17.1.2"])
+
+    def test_retired_source_is_neither_fetched_nor_retained(self):
+        with tempfile.TemporaryDirectory() as folder:
+            first = run(folder, {"WeTest": TABLE})
+            old = {"source": "Uouin", "fetched_at": "2024-04-09T00:00:00+00:00",
+                   "metadata": {"observed_at": "2024/04/09 01:32:04", "colo": "SIN"}, "retained": False}
+            first["candidates"][0]["observations"].append(old)
+            first["candidates"].append({"ip": "104.17.1.77", "observations": [old]})
+            (Path(folder) / "candidates.json").write_text(json.dumps(first))
+            fetched = []
+            fixture = fetcher({"WeTest": TABLE})
+
+            def fetch(url):
+                fetched.append(url)
+                return fixture(url)
+
+            with contextlib.redirect_stdout(io.StringIO()):
+                second = collects.collect(folder, fetch)
+            self.assertNotIn("https://api.uouin.com/cloudflare.html", fetched)
+            self.assertNotIn("Uouin", {row["source"] for row in second["sources"]})
+            self.assertEqual([row["ip"] for row in second["candidates"]], ["104.24.213.11"])
+            self.assertEqual(second["candidates"][0]["colos"], ["FRA", "LAX"])
+            self.assertTrue(all(row["source"] != "Uouin" for row in second["candidates"][0]["observations"]))
 
     def test_missing_fresh_family_preserves_legacy_family(self):
         with tempfile.TemporaryDirectory() as folder:
@@ -170,6 +196,8 @@ class CollectorTests(unittest.TestCase):
             ipv6 = next(row for row in catalog["candidates"] if row["family"] == 6)
             self.assertEqual(ipv6["observations"][0]["source"], "legacy-import")
             self.assertTrue(ipv6["observations"][0]["retained"])
+            self.assertEqual(ipv6["colos"], [])
+            self.assertEqual((Path(folder) / "ipv6.txt").read_text(), "[2606:4700::1234]:443#colo=unknown\n")
 
     def test_unsupported_previous_catalog_is_preserved(self):
         with tempfile.TemporaryDirectory() as folder:
