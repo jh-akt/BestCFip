@@ -52,14 +52,15 @@ DEFAULT_COLUMNS = {
 ALIASES = {
     "carrier": {"carrier", "line", "isp", "线路", "线路名称", "运营商", "网络运营商"},
     "colo": {"colo", "datacenter", "数据中心", "机房", "节点", "node"},
-    "rtt": {"rtt", "rttms", "latency", "latencyms", "delay", "delayms", "ping", "pingms", "延迟", "往返延迟"},
+    "rtt": {"rtt", "rttms", "latency", "latencyms", "delay", "delayms", "ping", "pingms", "延迟", "平均延迟", "往返延迟"},
     "loss": {"loss", "lossrate", "packetloss", "丢包", "丢包率"},
     "speed": {"speed", "下载速度", "速度", "峰值速度"},
     "bandwidth": {"bandwidth", "带宽", "网络带宽"},
-    "observed_at": {"observedat", "updatetime", "updatedat", "timestamp", "time", "date", "更新时间", "时间", "测试时间"},
+    "observed_at": {"observedat", "updatetime", "updatedat", "timestamp", "time", "date", "更新时间", "时间", "测试时间", "测速时间"},
+    "source_record_created_at": {"createdat", "createdtime", "创建时间"},
     "anycast_claim": {"anycast", "isanycast", "routingtype", "routetype"},
 }
-CARRIERS = {"dianxin": "电信", "ct": "电信", "liantong": "联通", "cu": "联通", "yidong": "移动", "cmcc": "移动"}
+CARRIERS = {"dianxin": "电信", "ct": "电信", "liantong": "联通", "cu": "联通", "yidong": "移动", "cm": "移动", "cmcc": "移动"}
 
 
 def utc_now():
@@ -123,6 +124,11 @@ def metadata(fields, context=()):
             result["loss_percent"] = float(number[1])
     # Source time is kept verbatim: HTML tables usually do not specify a timezone.
     result["observed_at_timezone"] = "unspecified" if "observed_at" in result else None
+    if re.fullmatch(r"\d{10}", result.get("observed_at", "")):
+        epoch = int(result["observed_at"])
+        if 946684800 <= epoch <= 4102444800:
+            result["observed_at_utc"] = datetime.fromtimestamp(epoch, timezone.utc).isoformat()
+            result["observed_at_timezone"] = "UTC"
     if context:
         result["source_context"] = "/".join(map(str, context))[:240]
     return result
@@ -182,7 +188,8 @@ def parse_source(source, body):
                 raise ValueError("source record limit exceeded")
 
     stripped = text.lstrip()
-    if stripped.startswith(("{", "[")):
+    bracket_address_list = bool(re.match(r"^\[[0-9a-fA-F:.]+\](?::\d+)?(?:\s|#|$)", stripped))
+    if stripped.startswith("{") or (stripped.startswith("[") and not bracket_address_list):
         payload = json.loads(text)
 
         def walk(value, context=(), inherited=None):
@@ -338,6 +345,12 @@ def collect(output, fetcher=fetch_http, now=None):
         status = {"source": source, "url": url, "attempted_at": now, "ok": False, "parsed": 0, "accepted": 0, "outside_official_ranges": 0}
         try:
             raw = fetcher(url)
+            status.update(response_bytes=len(raw), body_sha256=hashlib.sha256(raw).hexdigest())
+            if re.search(rb"<(?:html|table|!doctype)\b", raw, re.I):
+                title = re.search(rb"<title[^>]*>(.*?)</title>", raw, re.I | re.S)
+                status["html_title"] = compact(title[1].decode("utf-8", errors="replace")) if title else None
+                status["html_table_count"] = len(re.findall(rb"<table\b", raw, re.I))
+                status["html_row_count"] = len(re.findall(rb"<tr\b", raw, re.I))
             rows = parse_source(source, raw)
             if not rows:
                 raise ValueError("no supported published address records")
