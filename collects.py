@@ -17,7 +17,6 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 SOURCES = (
-    ("Uouin", "https://api.uouin.com/cloudflare.html"),
     ("ZXW", "https://ip.164746.xyz"),
     ("IPDB", "https://ipdb.api.030101.xyz/?type=bestcf"),
     ("WeTestV6", "https://www.wetest.vip/page/cloudflare/address_v6.html"),
@@ -30,6 +29,7 @@ SOURCES = (
     ("CMLiussv6", "https://addressesapi.090227.xyz/cmcc-ipv6"),
     ("FaaS", "https://raw.githubusercontent.com/xingpingcn/enhanced-FaaS-in-China/refs/heads/main/Cf.json"),
 )
+RETIRED_SOURCES = {"Uouin": "Removed by user: published measurements were from 2024-04-09; do not fetch or retain."}
 RANGE_URLS = {
     4: "https://www.cloudflare.com/ips-v4/",
     6: "https://www.cloudflare.com/ips-v6/",
@@ -47,7 +47,6 @@ TOKEN = re.compile(
 DEFAULT_COLUMNS = {
     "WeTest": ["carrier", "address", "bandwidth", "speed", "rtt", "colo", "observed_at"],
     "WeTestV6": ["carrier", "address", "bandwidth", "speed", "rtt", "colo", "observed_at"],
-    "Uouin": ["index", "carrier", "address", "loss", "rtt", "speed", "bandwidth", "colo", "observed_at"],
 }
 ALIASES = {
     "carrier": {"carrier", "line", "isp", "线路", "线路名称", "运营商", "网络运营商"},
@@ -327,9 +326,22 @@ def previous_observations(output):
     return imported
 
 
+def observed_colos(observations):
+    """Aggregate only source-provided three-letter colo codes."""
+    values = [observation.get("metadata", {}).get("colo") for observation in observations]
+    return sorted({value.upper() for value in values
+                   if isinstance(value, str) and re.fullmatch(r"[A-Za-z]{3}", value)})
+
+
 def render_text(candidates, family):
-    return "".join(f"[{row['ip']}]:443\n" if family == 6 else f"{row['ip']}:443\n"
-                   for row in candidates if row["family"] == family)
+    lines = []
+    for row in candidates:
+        if row["family"] != family:
+            continue
+        endpoint = f"[{row['ip']}]:443" if family == 6 else f"{row['ip']}:443"
+        colos = ",".join(row["colos"]) or "unknown"
+        lines.append(f"{endpoint}#colo={colos}\n")
+    return "".join(lines)
 
 
 def publish(output, files):
@@ -409,8 +421,12 @@ def collect(output, fetcher=fetch_http, now=None):
         candidates.append({"ip": ip, "port": 443, "family": ipaddress.ip_address(ip).version,
                            "cf_official_prefix": matching_prefix(ip, ranges),
                            "network_class": "cloudflare_published_proxy_range", "anycast_per_address_verified": False,
+                           "colos": observed_colos(combined[ip].values()),
                            "observations": sorted(combined[ip].values(), key=lambda value: json.dumps(value, sort_keys=True, ensure_ascii=False))})
     catalog = {"schema_version": SCHEMA_VERSION, "generated_at": now, "candidate_probing": False,
+               "retired_sources": RETIRED_SOURCES,
+               "text_list_format": "IP:443#colo=CODE[,CODE]; IPv6 bracketed; unknown when sources provide no colo",
+               "colo_evidence": "Source observations only; not the collector's current or the reader's local edge.",
                "anycast_documentation": ANYCAST_DOC,
                "evidence_limit": "Official range membership and published source observations; not per-address Anycast verification or local reachability.",
                "range_sources": range_evidence, "sources": statuses, "candidates": candidates,
