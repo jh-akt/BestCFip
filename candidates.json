@@ -5,67 +5,40 @@
     {
       "anycast_per_address_verified": false,
       "cf_official_prefix": "104.16.0.0/13",
-      "colos": [
-        "LAX"
-      ],
-      "family": 4,
-      "ip": "104.16.145.236",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "html-table",
-          "metadata": {
-            "bandwidth": "5 MB",
-            "carrier": "电信",
-            "colo": "LAX",
-            "colo_raw": "LAX",
-            "observed_at": "2026-10-10 04:35:35",
-            "observed_at_timezone": "unspecified",
-            "rtt": "182 毫秒",
-            "rtt_ms": 182.0,
-            "source_fields": {
-              "优选地址": "104.16.145.236",
-              "峰值速度": "647 kB/s",
-              "往返延迟": "182 毫秒",
-              "数据中心": "LAX",
-              "更新时间": "2026-10-10 04:35:35",
-              "线路名称": "电信",
-              "网络带宽": "5 MB"
-            },
-            "speed": "647 kB/s"
-          },
-          "retained": false,
-          "source": "WeTest",
-          "url": "https://www.wetest.vip/page/cloudflare/address_v4.html"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "104.16.0.0/13",
       "colos": [],
       "family": 4,
-      "ip": "104.16.151.14",
+      "ip": "104.16.48.113",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "json-list",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "json-record",
           "metadata": {
             "carrier": "联通",
-            "observed_at": "1791576083",
-            "observed_at_timezone": "UTC",
-            "observed_at_utc": "2026-10-09T20:01:23+00:00",
-            "source_context": "Cf/result/liantong/2",
+            "observed_at_timezone": null,
+            "source_context": "data/CU/2/ip",
             "source_fields": {
-              "update_time": "1791576083"
-            }
+              "avgScore": "422",
+              "code": "0",
+              "count": "0",
+              "createdTime": "2026-10-09 01:30:01",
+              "dxLatencyAvg": "167.92",
+              "dxPkgLostRateAvg": "7.26",
+              "dxScore": "530",
+              "ip": "104.16.48.113",
+              "ltLatencyAvg": "208.79",
+              "ltPkgLostRateAvg": "2.19",
+              "ltScore": "318",
+              "message": "true",
+              "ydLatencyAvg": "183.23",
+              "ydPkgLostRateAvg": "4.73",
+              "ydScore": "419"
+            },
+            "source_record_created_at": "2026-10-09 01:30:01"
           },
           "retained": false,
-          "source": "FaaS",
-          "url": "https://raw.githubusercontent.com/xingpingcn/enhanced-FaaS-in-China/refs/heads/main/Cf.json"
+          "source": "VPS",
+          "url": "https://vps789.com/openApi/cfIpApi"
         }
       ],
       "port": 443
@@ -75,11 +48,11 @@
       "cf_official_prefix": "104.16.0.0/13",
       "colos": [],
       "family": 4,
-      "ip": "104.16.151.106",
+      "ip": "104.16.147.245",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -97,38 +70,25 @@
       "cf_official_prefix": "104.16.0.0/13",
       "colos": [],
       "family": 4,
-      "ip": "104.16.153.218",
+      "ip": "104.16.151.14",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "json-record",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "json-list",
           "metadata": {
-            "carrier": "移动",
-            "observed_at_timezone": null,
-            "source_context": "data/CM/4/ip",
+            "carrier": "联通",
+            "observed_at": "1791609725",
+            "observed_at_timezone": "UTC",
+            "observed_at_utc": "2026-10-10T05:22:05+00:00",
+            "source_context": "Cf/result/liantong/1",
             "source_fields": {
-              "avgScore": "333",
-              "code": "0",
-              "count": "0",
-              "createdTime": "2026-10-06 01:30:01",
-              "dxLatencyAvg": "166.27",
-              "dxPkgLostRateAvg": "6.92",
-              "dxScore": "512",
-              "ip": "104.16.153.218",
-              "ltLatencyAvg": "200.1",
-              "ltPkgLostRateAvg": "2.74",
-              "ltScore": "337",
-              "message": "true",
-              "ydLatencyAvg": "66.34",
-              "ydPkgLostRateAvg": "1.71",
-              "ydScore": "151"
-            },
-            "source_record_created_at": "2026-10-06 01:30:01"
+              "update_time": "1791609725"
+            }
           },
           "retained": false,
-          "source": "VPS",
-          "url": "https://vps789.com/openApi/cfIpApi"
+          "source": "FaaS",
+          "url": "https://raw.githubusercontent.com/xingpingcn/enhanced-FaaS-in-China/refs/heads/main/Cf.json"
         }
       ],
       "port": 443
@@ -136,39 +96,21 @@
     {
       "anycast_per_address_verified": false,
       "cf_official_prefix": "104.16.0.0/13",
-      "colos": [
-        "LAX"
-      ],
+      "colos": [],
       "family": 4,
-      "ip": "104.16.245.206",
+      "ip": "104.16.152.208",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "html-table",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "text-list",
           "metadata": {
-            "bandwidth": "5 MB",
-            "carrier": "电信",
-            "colo": "LAX",
-            "colo_raw": "LAX",
-            "observed_at": "2026-10-10 03:51:29",
-            "observed_at_timezone": "unspecified",
-            "rtt": "180 毫秒",
-            "rtt_ms": 180.0,
-            "source_fields": {
-              "优选地址": "104.16.245.206",
-              "峰值速度": "647 kB/s",
-              "往返延迟": "180 毫秒",
-              "数据中心": "LAX",
-              "更新时间": "2026-10-10 03:51:29",
-              "线路名称": "电信",
-              "网络带宽": "5 MB"
-            },
-            "speed": "647 kB/s"
+            "observed_at_timezone": null,
+            "source_fields": {}
           },
           "retained": false,
-          "source": "WeTest",
-          "url": "https://www.wetest.vip/page/cloudflare/address_v4.html"
+          "source": "IPDB",
+          "url": "https://ipdb.api.030101.xyz/?type=bestcf"
         }
       ],
       "port": 443
@@ -180,27 +122,27 @@
         "HKG"
       ],
       "family": 4,
-      "ip": "104.16.249.54",
+      "ip": "104.16.153.67",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "bandwidth": "5 MB",
             "carrier": "移动",
             "colo": "HKG",
             "colo_raw": "HKG",
-            "observed_at": "2026-10-10 04:39:31",
+            "observed_at": "2026-10-10 13:29:43",
             "observed_at_timezone": "unspecified",
-            "rtt": "53 毫秒",
-            "rtt_ms": 53.0,
+            "rtt": "47 毫秒",
+            "rtt_ms": 47.0,
             "source_fields": {
-              "优选地址": "104.16.249.54",
+              "优选地址": "104.16.153.67",
               "峰值速度": "647 kB/s",
-              "往返延迟": "53 毫秒",
+              "往返延迟": "47 毫秒",
               "数据中心": "HKG",
-              "更新时间": "2026-10-10 04:39:31",
+              "更新时间": "2026-10-10 13:29:43",
               "线路名称": "移动",
               "网络带宽": "5 MB"
             },
@@ -218,78 +160,19 @@
       "cf_official_prefix": "104.16.0.0/13",
       "colos": [],
       "family": 4,
-      "ip": "104.17.22.6",
+      "ip": "104.16.154.125",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "json-record",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "text-list",
           "metadata": {
-            "carrier": "联通",
             "observed_at_timezone": null,
-            "source_context": "data/CU/2/ip",
-            "source_fields": {
-              "avgScore": "404",
-              "code": "0",
-              "count": "0",
-              "createdTime": "2026-09-30 01:30:01",
-              "dxLatencyAvg": "167.38",
-              "dxPkgLostRateAvg": "11.23",
-              "dxScore": "728",
-              "ip": "104.17.22.6",
-              "ltLatencyAvg": "206.85",
-              "ltPkgLostRateAvg": "1.85",
-              "ltScore": "299",
-              "message": "true",
-              "ydLatencyAvg": "66.33",
-              "ydPkgLostRateAvg": "2.4",
-              "ydScore": "186"
-            },
-            "source_record_created_at": "2026-09-30 01:30:01"
+            "source_fields": {}
           },
           "retained": false,
-          "source": "VPS",
-          "url": "https://vps789.com/openApi/cfIpApi"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "104.16.0.0/13",
-      "colos": [
-        "HKG"
-      ],
-      "family": 4,
-      "ip": "104.17.22.172",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "html-table",
-          "metadata": {
-            "bandwidth": "5 MB",
-            "carrier": "移动",
-            "colo": "HKG",
-            "colo_raw": "HKG",
-            "observed_at": "2026-10-10 04:25:34",
-            "observed_at_timezone": "unspecified",
-            "rtt": "59 毫秒",
-            "rtt_ms": 59.0,
-            "source_fields": {
-              "优选地址": "104.17.22.172",
-              "峰值速度": "647 kB/s",
-              "往返延迟": "59 毫秒",
-              "数据中心": "HKG",
-              "更新时间": "2026-10-10 04:25:34",
-              "线路名称": "移动",
-              "网络带宽": "5 MB"
-            },
-            "speed": "647 kB/s"
-          },
-          "retained": false,
-          "source": "WeTest",
-          "url": "https://www.wetest.vip/page/cloudflare/address_v4.html"
+          "source": "IPDB",
+          "url": "https://ipdb.api.030101.xyz/?type=bestcf"
         }
       ],
       "port": 443
@@ -301,67 +184,27 @@
         "LAX"
       ],
       "family": 4,
-      "ip": "104.17.60.163",
+      "ip": "104.16.243.196",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "bandwidth": "5 MB",
             "carrier": "电信",
             "colo": "LAX",
             "colo_raw": "LAX",
-            "observed_at": "2026-10-10 04:20:34",
+            "observed_at": "2026-10-10 11:20:37",
             "observed_at_timezone": "unspecified",
-            "rtt": "187 毫秒",
-            "rtt_ms": 187.0,
+            "rtt": "189 毫秒",
+            "rtt_ms": 189.0,
             "source_fields": {
-              "优选地址": "104.17.60.163",
+              "优选地址": "104.16.243.196",
               "峰值速度": "647 kB/s",
-              "往返延迟": "187 毫秒",
+              "往返延迟": "189 毫秒",
               "数据中心": "LAX",
-              "更新时间": "2026-10-10 04:20:34",
-              "线路名称": "电信",
-              "网络带宽": "5 MB"
-            },
-            "speed": "647 kB/s"
-          },
-          "retained": false,
-          "source": "WeTest",
-          "url": "https://www.wetest.vip/page/cloudflare/address_v4.html"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "104.16.0.0/13",
-      "colos": [
-        "LAX"
-      ],
-      "family": 4,
-      "ip": "104.17.109.209",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "html-table",
-          "metadata": {
-            "bandwidth": "5 MB",
-            "carrier": "电信",
-            "colo": "LAX",
-            "colo_raw": "LAX",
-            "observed_at": "2026-10-10 04:38:29",
-            "observed_at_timezone": "unspecified",
-            "rtt": "181 毫秒",
-            "rtt_ms": 181.0,
-            "source_fields": {
-              "优选地址": "104.17.109.209",
-              "峰值速度": "647 kB/s",
-              "往返延迟": "181 毫秒",
-              "数据中心": "LAX",
-              "更新时间": "2026-10-10 04:38:29",
+              "更新时间": "2026-10-10 11:20:37",
               "线路名称": "电信",
               "网络带宽": "5 MB"
             },
@@ -381,27 +224,27 @@
         "HKG"
       ],
       "family": 4,
-      "ip": "104.17.110.32",
+      "ip": "104.16.253.221",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "bandwidth": "5 MB",
             "carrier": "移动",
             "colo": "HKG",
             "colo_raw": "HKG",
-            "observed_at": "2026-10-10 04:42:30",
+            "observed_at": "2026-10-10 13:48:45",
             "observed_at_timezone": "unspecified",
-            "rtt": "47 毫秒",
-            "rtt_ms": 47.0,
+            "rtt": "71 毫秒",
+            "rtt_ms": 71.0,
             "source_fields": {
-              "优选地址": "104.17.110.32",
+              "优选地址": "104.16.253.221",
               "峰值速度": "647 kB/s",
-              "往返延迟": "47 毫秒",
+              "往返延迟": "71 毫秒",
               "数据中心": "HKG",
-              "更新时间": "2026-10-10 04:42:30",
+              "更新时间": "2026-10-10 13:48:45",
               "线路名称": "移动",
               "网络带宽": "5 MB"
             },
@@ -417,32 +260,240 @@
     {
       "anycast_per_address_verified": false,
       "cf_official_prefix": "104.16.0.0/13",
+      "colos": [],
+      "family": 4,
+      "ip": "104.17.18.165",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "text-list",
+          "metadata": {
+            "observed_at_timezone": null,
+            "source_fields": {}
+          },
+          "retained": false,
+          "source": "IPDB",
+          "url": "https://ipdb.api.030101.xyz/?type=bestcf"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "104.16.0.0/13",
+      "colos": [],
+      "family": 4,
+      "ip": "104.17.48.73",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "text-list",
+          "metadata": {
+            "observed_at_timezone": null,
+            "source_fields": {}
+          },
+          "retained": false,
+          "source": "IPDB",
+          "url": "https://ipdb.api.030101.xyz/?type=bestcf"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "104.16.0.0/13",
+      "colos": [],
+      "family": 4,
+      "ip": "104.17.56.115",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "text-list",
+          "metadata": {
+            "observed_at_timezone": null,
+            "source_fields": {}
+          },
+          "retained": false,
+          "source": "IPDB",
+          "url": "https://ipdb.api.030101.xyz/?type=bestcf"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "104.16.0.0/13",
+      "colos": [],
+      "family": 4,
+      "ip": "104.17.59.210",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "text-list",
+          "metadata": {
+            "observed_at_timezone": null,
+            "source_fields": {}
+          },
+          "retained": false,
+          "source": "IPDB",
+          "url": "https://ipdb.api.030101.xyz/?type=bestcf"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "104.16.0.0/13",
       "colos": [
         "HKG"
       ],
       "family": 4,
-      "ip": "104.17.117.228",
+      "ip": "104.17.98.49",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "bandwidth": "5 MB",
             "carrier": "移动",
             "colo": "HKG",
             "colo_raw": "HKG",
-            "observed_at": "2026-10-10 04:39:31",
+            "observed_at": "2026-10-10 12:00:35",
             "observed_at_timezone": "unspecified",
-            "rtt": "54 毫秒",
-            "rtt_ms": 54.0,
+            "rtt": "100 毫秒",
+            "rtt_ms": 100.0,
             "source_fields": {
-              "优选地址": "104.17.117.228",
-              "峰值速度": "647 kB/s",
-              "往返延迟": "54 毫秒",
+              "优选地址": "104.17.98.49",
+              "峰值速度": "645 kB/s",
+              "往返延迟": "100 毫秒",
               "数据中心": "HKG",
-              "更新时间": "2026-10-10 04:39:31",
+              "更新时间": "2026-10-10 12:00:35",
               "线路名称": "移动",
+              "网络带宽": "5 MB"
+            },
+            "speed": "645 kB/s"
+          },
+          "retained": false,
+          "source": "WeTest",
+          "url": "https://www.wetest.vip/page/cloudflare/address_v4.html"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "104.16.0.0/13",
+      "colos": [
+        "SJC"
+      ],
+      "family": 4,
+      "ip": "104.17.134.88",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "html-table",
+          "metadata": {
+            "bandwidth": "5 MB",
+            "carrier": "联通",
+            "colo": "SJC",
+            "colo_raw": "SJC",
+            "observed_at": "2026-10-10 13:44:07",
+            "observed_at_timezone": "unspecified",
+            "rtt": "140 毫秒",
+            "rtt_ms": 140.0,
+            "source_fields": {
+              "优选地址": "104.17.134.88",
+              "峰值速度": "644 kB/s",
+              "往返延迟": "140 毫秒",
+              "数据中心": "SJC",
+              "更新时间": "2026-10-10 13:44:07",
+              "线路名称": "联通",
+              "网络带宽": "5 MB"
+            },
+            "speed": "644 kB/s"
+          },
+          "retained": false,
+          "source": "WeTest",
+          "url": "https://www.wetest.vip/page/cloudflare/address_v4.html"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "104.16.0.0/13",
+      "colos": [
+        "SJC"
+      ],
+      "family": 4,
+      "ip": "104.17.136.145",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "html-table",
+          "metadata": {
+            "bandwidth": "5 MB",
+            "carrier": "联通",
+            "colo": "SJC",
+            "colo_raw": "SJC",
+            "observed_at": "2026-10-10 13:45:42",
+            "observed_at_timezone": "unspecified",
+            "rtt": "153 毫秒",
+            "rtt_ms": 153.0,
+            "source_fields": {
+              "优选地址": "104.17.136.145",
+              "峰值速度": "645 kB/s",
+              "往返延迟": "153 毫秒",
+              "数据中心": "SJC",
+              "更新时间": "2026-10-10 13:45:42",
+              "线路名称": "联通",
+              "网络带宽": "5 MB"
+            },
+            "speed": "645 kB/s"
+          },
+          "retained": false,
+          "source": "WeTest",
+          "url": "https://www.wetest.vip/page/cloudflare/address_v4.html"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "104.16.0.0/13",
+      "colos": [
+        "LAX"
+      ],
+      "family": 4,
+      "ip": "104.17.142.135",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "html-table",
+          "metadata": {
+            "bandwidth": "5 MB",
+            "carrier": "电信",
+            "colo": "LAX",
+            "colo_raw": "LAX",
+            "observed_at": "2026-10-10 10:53:59",
+            "observed_at_timezone": "unspecified",
+            "rtt": "193 毫秒",
+            "rtt_ms": 193.0,
+            "source_fields": {
+              "优选地址": "104.17.142.135",
+              "峰值速度": "647 kB/s",
+              "往返延迟": "193 毫秒",
+              "数据中心": "LAX",
+              "更新时间": "2026-10-10 10:53:59",
+              "线路名称": "电信",
               "网络带宽": "5 MB"
             },
             "speed": "647 kB/s"
@@ -461,31 +512,71 @@
         "SJC"
       ],
       "family": 4,
-      "ip": "104.17.135.79",
+      "ip": "104.17.150.39",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "bandwidth": "5 MB",
             "carrier": "联通",
             "colo": "SJC",
             "colo_raw": "SJC",
-            "observed_at": "2026-10-10 04:40:54",
+            "observed_at": "2026-10-10 13:36:07",
+            "observed_at_timezone": "unspecified",
+            "rtt": "138 毫秒",
+            "rtt_ms": 138.0,
+            "source_fields": {
+              "优选地址": "104.17.150.39",
+              "峰值速度": "648 kB/s",
+              "往返延迟": "138 毫秒",
+              "数据中心": "SJC",
+              "更新时间": "2026-10-10 13:36:07",
+              "线路名称": "联通",
+              "网络带宽": "5 MB"
+            },
+            "speed": "648 kB/s"
+          },
+          "retained": false,
+          "source": "WeTest",
+          "url": "https://www.wetest.vip/page/cloudflare/address_v4.html"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "104.16.0.0/13",
+      "colos": [
+        "SJC"
+      ],
+      "family": 4,
+      "ip": "104.17.152.241",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "html-table",
+          "metadata": {
+            "bandwidth": "5 MB",
+            "carrier": "联通",
+            "colo": "SJC",
+            "colo_raw": "SJC",
+            "observed_at": "2026-10-10 13:44:07",
             "observed_at_timezone": "unspecified",
             "rtt": "133 毫秒",
             "rtt_ms": 133.0,
             "source_fields": {
-              "优选地址": "104.17.135.79",
-              "峰值速度": "645 kB/s",
+              "优选地址": "104.17.152.241",
+              "峰值速度": "647 kB/s",
               "往返延迟": "133 毫秒",
               "数据中心": "SJC",
-              "更新时间": "2026-10-10 04:40:54",
+              "更新时间": "2026-10-10 13:44:07",
               "线路名称": "联通",
               "网络带宽": "5 MB"
             },
-            "speed": "645 kB/s"
+            "speed": "647 kB/s"
           },
           "retained": false,
           "source": "WeTest",
@@ -498,34 +589,34 @@
       "anycast_per_address_verified": false,
       "cf_official_prefix": "104.16.0.0/13",
       "colos": [
-        "SJC"
+        "HKG"
       ],
       "family": 4,
-      "ip": "104.17.136.56",
+      "ip": "104.17.162.191",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "bandwidth": "5 MB",
-            "carrier": "联通",
-            "colo": "SJC",
-            "colo_raw": "SJC",
-            "observed_at": "2026-10-10 04:34:54",
+            "carrier": "移动",
+            "colo": "HKG",
+            "colo_raw": "HKG",
+            "observed_at": "2026-10-10 13:42:40",
             "observed_at_timezone": "unspecified",
-            "rtt": "132 毫秒",
-            "rtt_ms": 132.0,
+            "rtt": "61 毫秒",
+            "rtt_ms": 61.0,
             "source_fields": {
-              "优选地址": "104.17.136.56",
-              "峰值速度": "645 kB/s",
-              "往返延迟": "132 毫秒",
-              "数据中心": "SJC",
-              "更新时间": "2026-10-10 04:34:54",
-              "线路名称": "联通",
+              "优选地址": "104.17.162.191",
+              "峰值速度": "647 kB/s",
+              "往返延迟": "61 毫秒",
+              "数据中心": "HKG",
+              "更新时间": "2026-10-10 13:42:40",
+              "线路名称": "移动",
               "网络带宽": "5 MB"
             },
-            "speed": "645 kB/s"
+            "speed": "647 kB/s"
           },
           "retained": false,
           "source": "WeTest",
@@ -537,32 +628,54 @@
     {
       "anycast_per_address_verified": false,
       "cf_official_prefix": "104.16.0.0/13",
-      "colos": [
-        "SJC"
-      ],
+      "colos": [],
       "family": 4,
-      "ip": "104.17.150.1",
+      "ip": "104.17.163.130",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "text-list",
+          "metadata": {
+            "observed_at_timezone": null,
+            "source_fields": {}
+          },
+          "retained": false,
+          "source": "IPDB",
+          "url": "https://ipdb.api.030101.xyz/?type=bestcf"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "104.16.0.0/13",
+      "colos": [
+        "LAX"
+      ],
+      "family": 4,
+      "ip": "104.17.178.106",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "bandwidth": "5 MB",
-            "carrier": "联通",
-            "colo": "SJC",
-            "colo_raw": "SJC",
-            "observed_at": "2026-10-10 04:39:37",
+            "carrier": "电信",
+            "colo": "LAX",
+            "colo_raw": "LAX",
+            "observed_at": "2026-10-10 12:22:40",
             "observed_at_timezone": "unspecified",
-            "rtt": "152 毫秒",
-            "rtt_ms": 152.0,
+            "rtt": "186 毫秒",
+            "rtt_ms": 186.0,
             "source_fields": {
-              "优选地址": "104.17.150.1",
+              "优选地址": "104.17.178.106",
               "峰值速度": "644 kB/s",
-              "往返延迟": "152 毫秒",
-              "数据中心": "SJC",
-              "更新时间": "2026-10-10 04:39:37",
-              "线路名称": "联通",
+              "往返延迟": "186 毫秒",
+              "数据中心": "LAX",
+              "更新时间": "2026-10-10 12:22:40",
+              "线路名称": "电信",
               "网络带宽": "5 MB"
             },
             "speed": "644 kB/s"
@@ -581,133 +694,31 @@
         "HKG"
       ],
       "family": 4,
-      "ip": "104.17.152.148",
+      "ip": "104.17.190.84",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "html-table",
-          "metadata": {
-            "bandwidth": "5 MB",
-            "carrier": "联通",
-            "colo": "HKG",
-            "colo_raw": "HKG",
-            "observed_at": "2026-10-10 04:40:33",
-            "observed_at_timezone": "unspecified",
-            "rtt": "36 毫秒",
-            "rtt_ms": 36.0,
-            "source_fields": {
-              "优选地址": "104.17.152.148",
-              "峰值速度": "647 kB/s",
-              "往返延迟": "36 毫秒",
-              "数据中心": "HKG",
-              "更新时间": "2026-10-10 04:40:33",
-              "线路名称": "联通",
-              "网络带宽": "5 MB"
-            },
-            "speed": "647 kB/s"
-          },
-          "retained": false,
-          "source": "WeTest",
-          "url": "https://www.wetest.vip/page/cloudflare/address_v4.html"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "104.16.0.0/13",
-      "colos": [],
-      "family": 4,
-      "ip": "104.17.153.158",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "text-list",
-          "metadata": {
-            "observed_at_timezone": null,
-            "source_fields": {}
-          },
-          "retained": false,
-          "source": "IPDB",
-          "url": "https://ipdb.api.030101.xyz/?type=bestcf"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "104.16.0.0/13",
-      "colos": [
-        "HKG"
-      ],
-      "family": 4,
-      "ip": "104.17.154.218",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "bandwidth": "5 MB",
             "carrier": "移动",
             "colo": "HKG",
             "colo_raw": "HKG",
-            "observed_at": "2026-10-10 04:07:34",
+            "observed_at": "2026-10-10 13:47:40",
             "observed_at_timezone": "unspecified",
-            "rtt": "47 毫秒",
-            "rtt_ms": 47.0,
+            "rtt": "57 毫秒",
+            "rtt_ms": 57.0,
             "source_fields": {
-              "优选地址": "104.17.154.218",
+              "优选地址": "104.17.190.84",
               "峰值速度": "647 kB/s",
-              "往返延迟": "47 毫秒",
+              "往返延迟": "57 毫秒",
               "数据中心": "HKG",
-              "更新时间": "2026-10-10 04:07:34",
+              "更新时间": "2026-10-10 13:47:40",
               "线路名称": "移动",
               "网络带宽": "5 MB"
             },
             "speed": "647 kB/s"
-          },
-          "retained": false,
-          "source": "WeTest",
-          "url": "https://www.wetest.vip/page/cloudflare/address_v4.html"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "104.16.0.0/13",
-      "colos": [
-        "HKG"
-      ],
-      "family": 4,
-      "ip": "104.17.157.208",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "html-table",
-          "metadata": {
-            "bandwidth": "5 MB",
-            "carrier": "联通",
-            "colo": "HKG",
-            "colo_raw": "HKG",
-            "observed_at": "2026-10-10 04:40:33",
-            "observed_at_timezone": "unspecified",
-            "rtt": "29 毫秒",
-            "rtt_ms": 29.0,
-            "source_fields": {
-              "优选地址": "104.17.157.208",
-              "峰值速度": "648 kB/s",
-              "往返延迟": "29 毫秒",
-              "数据中心": "HKG",
-              "更新时间": "2026-10-10 04:40:33",
-              "线路名称": "联通",
-              "网络带宽": "5 MB"
-            },
-            "speed": "648 kB/s"
           },
           "retained": false,
           "source": "WeTest",
@@ -725,28 +736,28 @@
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "json-record",
           "metadata": {
             "carrier": "移动",
             "observed_at_timezone": null,
-            "source_context": "data/CM/2/ip",
+            "source_context": "data/CM/4/ip",
             "source_fields": {
-              "avgScore": "365",
+              "avgScore": "371",
               "code": "0",
               "count": "0",
               "createdTime": "2026-10-08 01:30:01",
-              "dxLatencyAvg": "166.99",
-              "dxPkgLostRateAvg": "7.6",
-              "dxScore": "546",
+              "dxLatencyAvg": "168.88",
+              "dxPkgLostRateAvg": "7.74",
+              "dxScore": "555",
               "ip": "104.17.210.85",
-              "ltLatencyAvg": "208.38",
-              "ltPkgLostRateAvg": "2.47",
-              "ltScore": "331",
+              "ltLatencyAvg": "209.64",
+              "ltPkgLostRateAvg": "2.53",
+              "ltScore": "336",
               "message": "true",
-              "ydLatencyAvg": "65.88",
+              "ydLatencyAvg": "69.26",
               "ydPkgLostRateAvg": "3.08",
-              "ydScore": "219"
+              "ydScore": "223"
             },
             "source_record_created_at": "2026-10-08 01:30:01"
           },
@@ -766,28 +777,28 @@
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "json-record",
           "metadata": {
             "carrier": "联通",
             "observed_at_timezone": null,
-            "source_context": "data/CU/1/ip",
+            "source_context": "data/CU/4/ip",
             "source_fields": {
-              "avgScore": "384",
+              "avgScore": "368",
               "code": "0",
               "count": "0",
               "createdTime": "2026-10-02 01:30:01",
-              "dxLatencyAvg": "168.07",
-              "dxPkgLostRateAvg": "8.08",
-              "dxScore": "572",
+              "dxLatencyAvg": "167.29",
+              "dxPkgLostRateAvg": "7.05",
+              "dxScore": "519",
               "ip": "104.17.210.216",
-              "ltLatencyAvg": "209.75",
+              "ltLatencyAvg": "210.66",
               "ltPkgLostRateAvg": "2.05",
-              "ltScore": "312",
+              "ltScore": "313",
               "message": "true",
-              "ydLatencyAvg": "72.21",
+              "ydLatencyAvg": "73.77",
               "ydPkgLostRateAvg": "3.97",
-              "ydScore": "270"
+              "ydScore": "272"
             },
             "source_record_created_at": "2026-10-02 01:30:01"
           },
@@ -807,69 +818,34 @@
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "json-record",
           "metadata": {
             "carrier": "移动",
             "observed_at_timezone": null,
-            "source_context": "data/CM/0/ip",
+            "source_context": "data/CM/1/ip",
             "source_fields": {
-              "avgScore": "393",
+              "avgScore": "396",
               "code": "0",
               "count": "0",
               "createdTime": "2026-10-01 01:30:01",
-              "dxLatencyAvg": "164.7",
-              "dxPkgLostRateAvg": "8.7",
-              "dxScore": "599",
+              "dxLatencyAvg": "165.82",
+              "dxPkgLostRateAvg": "9.18",
+              "dxScore": "624",
               "ip": "104.17.217.61",
-              "ltLatencyAvg": "208.58",
-              "ltPkgLostRateAvg": "3.7",
-              "ltScore": "393",
+              "ltLatencyAvg": "209.16",
+              "ltPkgLostRateAvg": "3.29",
+              "ltScore": "373",
               "message": "true",
-              "ydLatencyAvg": "65.68",
+              "ydLatencyAvg": "69.05",
               "ydPkgLostRateAvg": "2.47",
-              "ydScore": "189"
+              "ydScore": "192"
             },
             "source_record_created_at": "2026-10-01 01:30:01"
           },
           "retained": false,
           "source": "VPS",
           "url": "https://vps789.com/openApi/cfIpApi"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "104.16.0.0/13",
-      "colos": [],
-      "family": 4,
-      "ip": "104.18.33.133",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "html-table",
-          "metadata": {
-            "loss": "0.00%",
-            "loss_percent": 0.0,
-            "observed_at": "2026-10-10 04:49:19",
-            "observed_at_timezone": "unspecified",
-            "rtt": "68.65",
-            "source_fields": {
-              "IP地址": "104.18.33.133 复制",
-              "下载速度": "52.79MB/s",
-              "丢包率": "0.00%",
-              "已发送": "4",
-              "已接收": "4",
-              "平均延迟": "68.65",
-              "测速时间": "2026-10-10 04:49:19"
-            },
-            "speed": "52.79MB/s"
-          },
-          "retained": false,
-          "source": "ZXW",
-          "url": "https://ip.164746.xyz"
         }
       ],
       "port": 443
@@ -883,193 +859,70 @@
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "json-record",
           "metadata": {
-            "carrier": "电信",
             "observed_at_timezone": null,
-            "source_context": "data/CT/4/ip",
+            "source_context": "data/AllAvg/2/ip",
             "source_fields": {
-              "avgScore": "223",
+              "avgScore": "224",
               "code": "0",
               "count": "0",
               "createdTime": "2026-10-01 01:30:01",
-              "dxLatencyAvg": "86.78",
-              "dxPkgLostRateAvg": "0.0",
-              "dxScore": "86",
+              "dxLatencyAvg": "85.92",
+              "dxPkgLostRateAvg": "0.21",
+              "dxScore": "96",
               "ip": "104.18.33.225",
-              "ltLatencyAvg": "206.18",
+              "ltLatencyAvg": "206.52",
               "ltPkgLostRateAvg": "3.08",
               "ltScore": "360",
               "message": "true",
-              "ydLatencyAvg": "70.52",
-              "ydPkgLostRateAvg": "3.08",
-              "ydScore": "224"
+              "ydLatencyAvg": "73.79",
+              "ydPkgLostRateAvg": "2.88",
+              "ydScore": "217"
             },
             "source_record_created_at": "2026-10-01 01:30:01"
           },
           "retained": false,
           "source": "VPS",
           "url": "https://vps789.com/openApi/cfIpApi"
-        },
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "104.16.0.0/13",
+      "colos": [],
+      "family": 4,
+      "ip": "104.18.40.189",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "json-record",
           "metadata": {
             "carrier": "移动",
             "observed_at_timezone": null,
-            "source_context": "data/CM/3/ip",
+            "source_context": "data/CM/0/ip",
             "source_fields": {
-              "avgScore": "223",
+              "avgScore": "205",
               "code": "0",
               "count": "0",
-              "createdTime": "2026-10-01 01:30:01",
-              "dxLatencyAvg": "86.78",
+              "createdTime": "2026-09-15 01:30:01",
+              "dxLatencyAvg": "83.3",
               "dxPkgLostRateAvg": "0.0",
-              "dxScore": "86",
-              "ip": "104.18.33.225",
-              "ltLatencyAvg": "206.18",
-              "ltPkgLostRateAvg": "3.08",
-              "ltScore": "360",
+              "dxScore": "83",
+              "ip": "104.18.40.189",
+              "ltLatencyAvg": "200.81",
+              "ltPkgLostRateAvg": "2.53",
+              "ltScore": "327",
               "message": "true",
-              "ydLatencyAvg": "70.52",
-              "ydPkgLostRateAvg": "3.08",
-              "ydScore": "224"
+              "ydLatencyAvg": "60.23",
+              "ydPkgLostRateAvg": "2.95",
+              "ydScore": "207"
             },
-            "source_record_created_at": "2026-10-01 01:30:01"
-          },
-          "retained": false,
-          "source": "VPS",
-          "url": "https://vps789.com/openApi/cfIpApi"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "104.16.0.0/13",
-      "colos": [],
-      "family": 4,
-      "ip": "104.18.40.19",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "text-list",
-          "metadata": {
-            "observed_at_timezone": null,
-            "source_fields": {}
-          },
-          "retained": false,
-          "source": "IPDB",
-          "url": "https://ipdb.api.030101.xyz/?type=bestcf"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "104.16.0.0/13",
-      "colos": [],
-      "family": 4,
-      "ip": "104.18.40.77",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "json-record",
-          "metadata": {
-            "carrier": "联通",
-            "observed_at_timezone": null,
-            "source_context": "data/CU/0/ip",
-            "source_fields": {
-              "avgScore": "220",
-              "code": "0",
-              "count": "0",
-              "createdTime": "2026-09-04 15:26:32",
-              "dxLatencyAvg": "82.19",
-              "dxPkgLostRateAvg": "0.0",
-              "dxScore": "82",
-              "ip": "104.18.40.77",
-              "ltLatencyAvg": "201.47",
-              "ltPkgLostRateAvg": "2.12",
-              "ltScore": "307",
-              "message": "true",
-              "ydLatencyAvg": "70.44",
-              "ydPkgLostRateAvg": "4.04",
-              "ydScore": "272"
-            },
-            "source_record_created_at": "2026-09-04 15:26:32"
-          },
-          "retained": false,
-          "source": "VPS",
-          "url": "https://vps789.com/openApi/cfIpApi"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "104.16.0.0/13",
-      "colos": [],
-      "family": 4,
-      "ip": "104.18.40.152",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "json-record",
-          "metadata": {
-            "carrier": "电信",
-            "observed_at_timezone": null,
-            "source_context": "data/CT/0/ip",
-            "source_fields": {
-              "avgScore": "233",
-              "code": "0",
-              "count": "0",
-              "createdTime": "2026-09-20 12:26:13",
-              "dxLatencyAvg": "90.41",
-              "dxPkgLostRateAvg": "0.0",
-              "dxScore": "90",
-              "ip": "104.18.40.152",
-              "ltLatencyAvg": "211.33",
-              "ltPkgLostRateAvg": "2.05",
-              "ltScore": "313",
-              "message": "true",
-              "ydLatencyAvg": "68.49",
-              "ydPkgLostRateAvg": "4.59",
-              "ydScore": "297"
-            },
-            "source_record_created_at": "2026-09-20 12:26:13"
-          },
-          "retained": false,
-          "source": "VPS",
-          "url": "https://vps789.com/openApi/cfIpApi"
-        },
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "json-record",
-          "metadata": {
-            "observed_at_timezone": null,
-            "source_context": "data/AllAvg/1/ip",
-            "source_fields": {
-              "avgScore": "233",
-              "code": "0",
-              "count": "0",
-              "createdTime": "2026-09-20 12:26:13",
-              "dxLatencyAvg": "90.41",
-              "dxPkgLostRateAvg": "0.0",
-              "dxScore": "90",
-              "ip": "104.18.40.152",
-              "ltLatencyAvg": "211.33",
-              "ltPkgLostRateAvg": "2.05",
-              "ltScore": "313",
-              "message": "true",
-              "ydLatencyAvg": "68.49",
-              "ydPkgLostRateAvg": "4.59",
-              "ydScore": "297"
-            },
-            "source_record_created_at": "2026-09-20 12:26:13"
+            "source_record_created_at": "2026-09-15 01:30:01"
           },
           "retained": false,
           "source": "VPS",
@@ -1087,27 +940,57 @@
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "json-record",
+          "metadata": {
+            "carrier": "电信",
+            "observed_at_timezone": null,
+            "source_context": "data/CT/1/ip",
+            "source_fields": {
+              "avgScore": "249",
+              "code": "0",
+              "count": "0",
+              "createdTime": "2026-09-29 01:30:01",
+              "dxLatencyAvg": "88.15",
+              "dxPkgLostRateAvg": "0.41",
+              "dxScore": "108",
+              "ip": "104.18.44.151",
+              "ltLatencyAvg": "203.73",
+              "ltPkgLostRateAvg": "2.88",
+              "ltScore": "347",
+              "message": "true",
+              "ydLatencyAvg": "70.64",
+              "ydPkgLostRateAvg": "4.45",
+              "ydScore": "293"
+            },
+            "source_record_created_at": "2026-09-29 01:30:01"
+          },
+          "retained": false,
+          "source": "VPS",
+          "url": "https://vps789.com/openApi/cfIpApi"
+        },
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "json-record",
           "metadata": {
             "observed_at_timezone": null,
             "source_context": "data/AllAvg/4/ip",
             "source_fields": {
-              "avgScore": "237",
+              "avgScore": "249",
               "code": "0",
               "count": "0",
               "createdTime": "2026-09-29 01:30:01",
-              "dxLatencyAvg": "87.38",
+              "dxLatencyAvg": "88.15",
               "dxPkgLostRateAvg": "0.41",
-              "dxScore": "107",
+              "dxScore": "108",
               "ip": "104.18.44.151",
-              "ltLatencyAvg": "202.9",
-              "ltPkgLostRateAvg": "2.67",
-              "ltScore": "336",
+              "ltLatencyAvg": "203.73",
+              "ltPkgLostRateAvg": "2.88",
+              "ltScore": "347",
               "message": "true",
-              "ydLatencyAvg": "67.63",
-              "ydPkgLostRateAvg": "4.04",
-              "ydScore": "269"
+              "ydLatencyAvg": "70.64",
+              "ydPkgLostRateAvg": "4.45",
+              "ydScore": "293"
             },
             "source_record_created_at": "2026-09-29 01:30:01"
           },
@@ -1123,34 +1006,56 @@
       "cf_official_prefix": "104.16.0.0/13",
       "colos": [],
       "family": 4,
-      "ip": "104.19.44.149",
+      "ip": "104.18.46.6",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "text-list",
+          "metadata": {
+            "observed_at_timezone": null,
+            "source_fields": {}
+          },
+          "retained": false,
+          "source": "IPDB",
+          "url": "https://ipdb.api.030101.xyz/?type=bestcf"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "104.16.0.0/13",
+      "colos": [],
+      "family": 4,
+      "ip": "104.19.37.164",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "json-record",
           "metadata": {
             "carrier": "移动",
             "observed_at_timezone": null,
-            "source_context": "data/CM/1/ip",
+            "source_context": "data/CM/2/ip",
             "source_fields": {
-              "avgScore": "390",
+              "avgScore": "375",
               "code": "0",
               "count": "0",
-              "createdTime": "2026-10-09 01:30:01",
-              "dxLatencyAvg": "165.33",
-              "dxPkgLostRateAvg": "8.08",
+              "createdTime": "2026-10-04 01:30:01",
+              "dxLatencyAvg": "169.23",
+              "dxPkgLostRateAvg": "8.01",
               "dxScore": "569",
-              "ip": "104.19.44.149",
-              "ltLatencyAvg": "199.85",
-              "ltPkgLostRateAvg": "4.25",
-              "ltScore": "412",
+              "ip": "104.19.37.164",
+              "ltLatencyAvg": "209.05",
+              "ltPkgLostRateAvg": "2.67",
+              "ltScore": "342",
               "message": "true",
-              "ydLatencyAvg": "70.07",
-              "ydPkgLostRateAvg": "2.4",
-              "ydScore": "190"
+              "ydLatencyAvg": "68.36",
+              "ydPkgLostRateAvg": "2.95",
+              "ydScore": "215"
             },
-            "source_record_created_at": "2026-10-09 01:30:01"
+            "source_record_created_at": "2026-10-04 01:30:01"
           },
           "retained": false,
           "source": "VPS",
@@ -1164,11 +1069,92 @@
       "cf_official_prefix": "104.16.0.0/13",
       "colos": [],
       "family": 4,
-      "ip": "104.19.44.195",
+      "ip": "104.19.50.49",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "json-record",
+          "metadata": {
+            "carrier": "联通",
+            "observed_at_timezone": null,
+            "source_context": "data/CU/1/ip",
+            "source_fields": {
+              "avgScore": "357",
+              "code": "0",
+              "count": "0",
+              "createdTime": "2026-10-08 01:30:01",
+              "dxLatencyAvg": "166.15",
+              "dxPkgLostRateAvg": "8.01",
+              "dxScore": "566",
+              "ip": "104.19.50.49",
+              "ltLatencyAvg": "200.04",
+              "ltPkgLostRateAvg": "2.33",
+              "ltScore": "316",
+              "message": "true",
+              "ydLatencyAvg": "73.48",
+              "ydPkgLostRateAvg": "2.33",
+              "ydScore": "189"
+            },
+            "source_record_created_at": "2026-10-08 01:30:01"
+          },
+          "retained": false,
+          "source": "VPS",
+          "url": "https://vps789.com/openApi/cfIpApi"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "104.16.0.0/13",
+      "colos": [
+        "LAX"
+      ],
+      "family": 4,
+      "ip": "104.19.155.171",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "html-table",
+          "metadata": {
+            "bandwidth": "5 MB",
+            "carrier": "电信",
+            "colo": "LAX",
+            "colo_raw": "LAX",
+            "observed_at": "2026-10-10 11:14:36",
+            "observed_at_timezone": "unspecified",
+            "rtt": "200 毫秒",
+            "rtt_ms": 200.0,
+            "source_fields": {
+              "优选地址": "104.19.155.171",
+              "峰值速度": "647 kB/s",
+              "往返延迟": "200 毫秒",
+              "数据中心": "LAX",
+              "更新时间": "2026-10-10 11:14:36",
+              "线路名称": "电信",
+              "网络带宽": "5 MB"
+            },
+            "speed": "647 kB/s"
+          },
+          "retained": false,
+          "source": "WeTest",
+          "url": "https://www.wetest.vip/page/cloudflare/address_v4.html"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "104.16.0.0/13",
+      "colos": [],
+      "family": 4,
+      "ip": "104.19.156.149",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -1186,56 +1172,34 @@
       "cf_official_prefix": "104.16.0.0/13",
       "colos": [],
       "family": 4,
-      "ip": "104.19.53.216",
+      "ip": "104.21.65.39",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "text-list",
-          "metadata": {
-            "observed_at_timezone": null,
-            "source_fields": {}
-          },
-          "retained": false,
-          "source": "IPDB",
-          "url": "https://ipdb.api.030101.xyz/?type=bestcf"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "104.16.0.0/13",
-      "colos": [],
-      "family": 4,
-      "ip": "104.19.55.203",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "json-record",
           "metadata": {
             "carrier": "联通",
             "observed_at_timezone": null,
             "source_context": "data/CU/3/ip",
             "source_fields": {
-              "avgScore": "377",
+              "avgScore": "402",
               "code": "0",
               "count": "0",
-              "createdTime": "2026-10-09 01:30:01",
-              "dxLatencyAvg": "165.67",
-              "dxPkgLostRateAvg": "8.84",
-              "dxScore": "607",
-              "ip": "104.19.55.203",
-              "ltLatencyAvg": "207.27",
-              "ltPkgLostRateAvg": "1.44",
-              "ltScore": "279",
+              "createdTime": "2026-10-07 01:30:01",
+              "dxLatencyAvg": "200.01",
+              "dxPkgLostRateAvg": "6.3",
+              "dxScore": "515",
+              "ip": "104.21.65.39",
+              "ltLatencyAvg": "213.21",
+              "ltPkgLostRateAvg": "1.92",
+              "ltScore": "309",
               "message": "true",
-              "ydLatencyAvg": "71.59",
-              "ydPkgLostRateAvg": "3.49",
-              "ydScore": "246"
+              "ydLatencyAvg": "177.08",
+              "ydPkgLostRateAvg": "4.11",
+              "ydScore": "382"
             },
-            "source_record_created_at": "2026-10-09 01:30:01"
+            "source_record_created_at": "2026-10-07 01:30:01"
           },
           "retained": false,
           "source": "VPS",
@@ -1246,44 +1210,41 @@
     },
     {
       "anycast_per_address_verified": false,
-      "cf_official_prefix": "104.16.0.0/13",
+      "cf_official_prefix": "104.24.0.0/14",
       "colos": [],
       "family": 4,
-      "ip": "104.19.145.65",
+      "ip": "104.26.0.20",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "text-list",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "json-record",
           "metadata": {
+            "carrier": "联通",
             "observed_at_timezone": null,
-            "source_fields": {}
+            "source_context": "data/CU/0/ip",
+            "source_fields": {
+              "avgScore": "396",
+              "code": "0",
+              "count": "0",
+              "createdTime": "2026-10-08 01:30:01",
+              "dxLatencyAvg": "185.27",
+              "dxPkgLostRateAvg": "6.37",
+              "dxScore": "503",
+              "ip": "104.26.0.20",
+              "ltLatencyAvg": "186.4",
+              "ltPkgLostRateAvg": "0.21",
+              "ltScore": "196",
+              "message": "true",
+              "ydLatencyAvg": "182.19",
+              "ydPkgLostRateAvg": "6.16",
+              "ydScore": "490"
+            },
+            "source_record_created_at": "2026-10-08 01:30:01"
           },
           "retained": false,
-          "source": "IPDB",
-          "url": "https://ipdb.api.030101.xyz/?type=bestcf"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "104.16.0.0/13",
-      "colos": [],
-      "family": 4,
-      "ip": "104.19.146.166",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "text-list",
-          "metadata": {
-            "observed_at_timezone": null,
-            "source_fields": {}
-          },
-          "retained": false,
-          "source": "IPDB",
-          "url": "https://ipdb.api.030101.xyz/?type=bestcf"
+          "source": "VPS",
+          "url": "https://vps789.com/openApi/cfIpApi"
         }
       ],
       "port": 443
@@ -1297,28 +1258,28 @@
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "json-record",
           "metadata": {
             "carrier": "电信",
             "observed_at_timezone": null,
-            "source_context": "data/CT/3/ip",
+            "source_context": "data/CT/0/ip",
             "source_fields": {
-              "avgScore": "295",
+              "avgScore": "291",
               "code": "0",
               "count": "0",
               "createdTime": "2026-09-08 01:30:01",
-              "dxLatencyAvg": "83.51",
+              "dxLatencyAvg": "81.55",
               "dxPkgLostRateAvg": "0.0",
-              "dxScore": "83",
+              "dxScore": "81",
               "ip": "162.159.60.59",
-              "ltLatencyAvg": "208.05",
-              "ltPkgLostRateAvg": "3.15",
-              "ltScore": "365",
+              "ltLatencyAvg": "209.48",
+              "ltPkgLostRateAvg": "2.95",
+              "ltScore": "356",
               "message": "true",
-              "ydLatencyAvg": "181.0",
+              "ydLatencyAvg": "180.92",
               "ydPkgLostRateAvg": "5.14",
-              "ydScore": "438"
+              "ydScore": "437"
             },
             "source_record_created_at": "2026-09-08 01:30:01"
           },
@@ -1332,40 +1293,39 @@
     {
       "anycast_per_address_verified": false,
       "cf_official_prefix": "162.158.0.0/15",
-      "colos": [],
+      "colos": [
+        "FRA"
+      ],
       "family": 4,
-      "ip": "162.159.133.176",
+      "ip": "162.159.144.108",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "json-record",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "html-table",
           "metadata": {
-            "carrier": "联通",
-            "observed_at_timezone": null,
-            "source_context": "data/CU/4/ip",
+            "bandwidth": "5 MB",
+            "carrier": "电信",
+            "colo": "FRA",
+            "colo_raw": "FRA",
+            "observed_at": "2026-10-10 13:13:43",
+            "observed_at_timezone": "unspecified",
+            "rtt": "186 毫秒",
+            "rtt_ms": 186.0,
             "source_fields": {
-              "avgScore": "404",
-              "code": "0",
-              "count": "0",
-              "createdTime": "2026-10-09 01:30:01",
-              "dxLatencyAvg": "191.55",
-              "dxPkgLostRateAvg": "8.9",
-              "dxScore": "636",
-              "ip": "162.159.133.176",
-              "ltLatencyAvg": "188.19",
-              "ltPkgLostRateAvg": "0.21",
-              "ltScore": "198",
-              "message": "true",
-              "ydLatencyAvg": "209.42",
-              "ydPkgLostRateAvg": "3.42",
-              "ydScore": "380"
+              "优选地址": "162.159.144.108",
+              "峰值速度": "647 kB/s",
+              "往返延迟": "186 毫秒",
+              "数据中心": "FRA",
+              "更新时间": "2026-10-10 13:13:43",
+              "线路名称": "电信",
+              "网络带宽": "5 MB"
             },
-            "source_record_created_at": "2026-10-09 01:30:01"
+            "speed": "647 kB/s"
           },
           "retained": false,
-          "source": "VPS",
-          "url": "https://vps789.com/openApi/cfIpApi"
+          "source": "WeTest",
+          "url": "https://www.wetest.vip/page/cloudflare/address_v4.html"
         }
       ],
       "port": 443
@@ -1375,11 +1335,11 @@
       "cf_official_prefix": "162.158.0.0/15",
       "colos": [],
       "family": 4,
-      "ip": "162.159.152.31",
+      "ip": "162.159.152.11",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -1399,11 +1359,11 @@
       "cf_official_prefix": "162.158.0.0/15",
       "colos": [],
       "family": 4,
-      "ip": "162.159.152.225",
+      "ip": "162.159.153.42",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -1423,11 +1383,11 @@
       "cf_official_prefix": "162.158.0.0/15",
       "colos": [],
       "family": 4,
-      "ip": "162.159.153.144",
+      "ip": "162.159.153.156",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -1451,7 +1411,7 @@
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -1475,7 +1435,7 @@
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -1499,7 +1459,7 @@
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -1516,33 +1476,117 @@
     },
     {
       "anycast_per_address_verified": false,
-      "cf_official_prefix": "162.158.0.0/15",
+      "cf_official_prefix": "172.64.0.0/13",
+      "colos": [],
+      "family": 4,
+      "ip": "172.64.52.30",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "json-list",
+          "metadata": {
+            "carrier": "电信",
+            "observed_at": "1791609725",
+            "observed_at_timezone": "UTC",
+            "observed_at_utc": "2026-10-10T05:22:05+00:00",
+            "source_context": "Cf/result/dianxin/0",
+            "source_fields": {
+              "update_time": "1791609725"
+            }
+          },
+          "retained": false,
+          "source": "FaaS",
+          "url": "https://raw.githubusercontent.com/xingpingcn/enhanced-FaaS-in-China/refs/heads/main/Cf.json"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "172.64.0.0/13",
+      "colos": [],
+      "family": 4,
+      "ip": "172.64.52.104",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "json-list",
+          "metadata": {
+            "carrier": "电信",
+            "observed_at": "1791609725",
+            "observed_at_timezone": "UTC",
+            "observed_at_utc": "2026-10-10T05:22:05+00:00",
+            "source_context": "Cf/result/dianxin/2",
+            "source_fields": {
+              "update_time": "1791609725"
+            }
+          },
+          "retained": false,
+          "source": "FaaS",
+          "url": "https://raw.githubusercontent.com/xingpingcn/enhanced-FaaS-in-China/refs/heads/main/Cf.json"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "172.64.0.0/13",
+      "colos": [],
+      "family": 4,
+      "ip": "172.64.52.189",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "json-list",
+          "metadata": {
+            "carrier": "电信",
+            "observed_at": "1791609725",
+            "observed_at_timezone": "UTC",
+            "observed_at_utc": "2026-10-10T05:22:05+00:00",
+            "source_context": "Cf/result/dianxin/1",
+            "source_fields": {
+              "update_time": "1791609725"
+            }
+          },
+          "retained": false,
+          "source": "FaaS",
+          "url": "https://raw.githubusercontent.com/xingpingcn/enhanced-FaaS-in-China/refs/heads/main/Cf.json"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "172.64.0.0/13",
       "colos": [
         "SJC"
       ],
       "family": 4,
-      "ip": "162.159.237.182",
+      "ip": "172.64.79.170",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "bandwidth": "5 MB",
-            "carrier": "电信",
+            "carrier": "联通",
             "colo": "SJC",
             "colo_raw": "SJC",
-            "observed_at": "2026-10-10 04:14:52",
+            "observed_at": "2026-10-10 13:46:03",
             "observed_at_timezone": "unspecified",
-            "rtt": "163 毫秒",
-            "rtt_ms": 163.0,
+            "rtt": "140 毫秒",
+            "rtt_ms": 140.0,
             "source_fields": {
-              "优选地址": "162.159.237.182",
+              "优选地址": "172.64.79.170",
               "峰值速度": "647 kB/s",
-              "往返延迟": "163 毫秒",
+              "往返延迟": "140 毫秒",
               "数据中心": "SJC",
-              "更新时间": "2026-10-10 04:14:52",
-              "线路名称": "电信",
+              "更新时间": "2026-10-10 13:46:03",
+              "线路名称": "联通",
               "网络带宽": "5 MB"
             },
             "speed": "647 kB/s"
@@ -1559,154 +1603,20 @@
       "cf_official_prefix": "172.64.0.0/13",
       "colos": [],
       "family": 4,
-      "ip": "172.64.52.43",
+      "ip": "172.64.144.15",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "json-list",
-          "metadata": {
-            "carrier": "电信",
-            "observed_at": "1791576083",
-            "observed_at_timezone": "UTC",
-            "observed_at_utc": "2026-10-09T20:01:23+00:00",
-            "source_context": "Cf/result/dianxin/0",
-            "source_fields": {
-              "update_time": "1791576083"
-            }
-          },
-          "retained": false,
-          "source": "FaaS",
-          "url": "https://raw.githubusercontent.com/xingpingcn/enhanced-FaaS-in-China/refs/heads/main/Cf.json"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "172.64.0.0/13",
-      "colos": [],
-      "family": 4,
-      "ip": "172.64.52.64",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "json-list",
-          "metadata": {
-            "carrier": "电信",
-            "observed_at": "1791576083",
-            "observed_at_timezone": "UTC",
-            "observed_at_utc": "2026-10-09T20:01:23+00:00",
-            "source_context": "Cf/result/dianxin/2",
-            "source_fields": {
-              "update_time": "1791576083"
-            }
-          },
-          "retained": false,
-          "source": "FaaS",
-          "url": "https://raw.githubusercontent.com/xingpingcn/enhanced-FaaS-in-China/refs/heads/main/Cf.json"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "172.64.0.0/13",
-      "colos": [],
-      "family": 4,
-      "ip": "172.64.52.86",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "json-list",
-          "metadata": {
-            "carrier": "电信",
-            "observed_at": "1791576083",
-            "observed_at_timezone": "UTC",
-            "observed_at_utc": "2026-10-09T20:01:23+00:00",
-            "source_context": "Cf/result/dianxin/1",
-            "source_fields": {
-              "update_time": "1791576083"
-            }
-          },
-          "retained": false,
-          "source": "FaaS",
-          "url": "https://raw.githubusercontent.com/xingpingcn/enhanced-FaaS-in-China/refs/heads/main/Cf.json"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "172.64.0.0/13",
-      "colos": [],
-      "family": 4,
-      "ip": "172.64.144.164",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "text-list",
-          "metadata": {
-            "observed_at_timezone": null,
-            "source_fields": {}
-          },
-          "retained": false,
-          "source": "IPDB",
-          "url": "https://ipdb.api.030101.xyz/?type=bestcf"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "172.64.0.0/13",
-      "colos": [],
-      "family": 4,
-      "ip": "172.64.145.119",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "json-list",
-          "metadata": {
-            "carrier": "移动",
-            "observed_at": "1791576083",
-            "observed_at_timezone": "UTC",
-            "observed_at_utc": "2026-10-09T20:01:23+00:00",
-            "source_context": "Cf/result/yidong/1",
-            "source_fields": {
-              "update_time": "1791576083"
-            }
-          },
-          "retained": false,
-          "source": "FaaS",
-          "url": "https://raw.githubusercontent.com/xingpingcn/enhanced-FaaS-in-China/refs/heads/main/Cf.json"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "172.64.0.0/13",
-      "colos": [],
-      "family": 4,
-      "ip": "172.64.145.155",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "json-list",
           "metadata": {
             "carrier": "联通",
-            "observed_at": "1791576083",
+            "observed_at": "1791609725",
             "observed_at_timezone": "UTC",
-            "observed_at_utc": "2026-10-09T20:01:23+00:00",
-            "source_context": "Cf/result/liantong/0",
+            "observed_at_utc": "2026-10-10T05:22:05+00:00",
+            "source_context": "Cf/result/liantong/2",
             "source_fields": {
-              "update_time": "1791576083"
+              "update_time": "1791609725"
             }
           },
           "retained": false,
@@ -1721,25 +1631,37 @@
       "cf_official_prefix": "172.64.0.0/13",
       "colos": [],
       "family": 4,
-      "ip": "172.64.145.255",
+      "ip": "172.64.144.224",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "json-list",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "json-record",
           "metadata": {
-            "carrier": "移动",
-            "observed_at": "1791576083",
-            "observed_at_timezone": "UTC",
-            "observed_at_utc": "2026-10-09T20:01:23+00:00",
-            "source_context": "Cf/result/yidong/0",
+            "observed_at_timezone": null,
+            "source_context": "data/AllAvg/0/ip",
             "source_fields": {
-              "update_time": "1791576083"
-            }
+              "avgScore": "209",
+              "code": "0",
+              "count": "0",
+              "createdTime": "2026-08-15 02:11:35",
+              "dxLatencyAvg": "86.59",
+              "dxPkgLostRateAvg": "0.0",
+              "dxScore": "86",
+              "ip": "172.64.144.224",
+              "ltLatencyAvg": "212.51",
+              "ltPkgLostRateAvg": "2.26",
+              "ltScore": "325",
+              "message": "true",
+              "ydLatencyAvg": "67.33",
+              "ydPkgLostRateAvg": "3.01",
+              "ydScore": "217"
+            },
+            "source_record_created_at": "2026-08-15 02:11:35"
           },
           "retained": false,
-          "source": "FaaS",
-          "url": "https://raw.githubusercontent.com/xingpingcn/enhanced-FaaS-in-China/refs/heads/main/Cf.json"
+          "source": "VPS",
+          "url": "https://vps789.com/openApi/cfIpApi"
         }
       ],
       "port": 443
@@ -1749,37 +1671,204 @@
       "cf_official_prefix": "172.64.0.0/13",
       "colos": [],
       "family": 4,
-      "ip": "172.64.147.110",
+      "ip": "172.64.147.67",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "json-record",
           "metadata": {
             "observed_at_timezone": null,
             "source_context": "data/AllAvg/3/ip",
             "source_fields": {
-              "avgScore": "223",
+              "avgScore": "264",
               "code": "0",
               "count": "0",
-              "createdTime": "2026-09-12 01:30:01",
-              "dxLatencyAvg": "95.01",
-              "dxPkgLostRateAvg": "0.0",
-              "dxScore": "95",
-              "ip": "172.64.147.110",
-              "ltLatencyAvg": "200.18",
-              "ltPkgLostRateAvg": "3.49",
-              "ltScore": "374",
+              "createdTime": "2026-09-24 01:30:01",
+              "dxLatencyAvg": "89.62",
+              "dxPkgLostRateAvg": "0.89",
+              "dxScore": "134",
+              "ip": "172.64.147.67",
+              "ltLatencyAvg": "207.53",
+              "ltPkgLostRateAvg": "3.9",
+              "ltScore": "402",
               "message": "true",
-              "ydLatencyAvg": "62.44",
-              "ydPkgLostRateAvg": "2.81",
-              "ydScore": "202"
+              "ydLatencyAvg": "71.29",
+              "ydPkgLostRateAvg": "3.7",
+              "ydScore": "256"
             },
-            "source_record_created_at": "2026-09-12 01:30:01"
+            "source_record_created_at": "2026-09-24 01:30:01"
           },
           "retained": false,
           "source": "VPS",
           "url": "https://vps789.com/openApi/cfIpApi"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "172.64.0.0/13",
+      "colos": [],
+      "family": 4,
+      "ip": "172.64.150.64",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "json-record",
+          "metadata": {
+            "carrier": "电信",
+            "observed_at_timezone": null,
+            "source_context": "data/CT/2/ip",
+            "source_fields": {
+              "avgScore": "263",
+              "code": "0",
+              "count": "0",
+              "createdTime": "2026-08-05 21:19:57",
+              "dxLatencyAvg": "84.88",
+              "dxPkgLostRateAvg": "0.0",
+              "dxScore": "84",
+              "ip": "172.64.150.64",
+              "ltLatencyAvg": "203.44",
+              "ltPkgLostRateAvg": "3.49",
+              "ltScore": "377",
+              "message": "true",
+              "ydLatencyAvg": "181.9",
+              "ydPkgLostRateAvg": "2.95",
+              "ydScore": "329"
+            },
+            "source_record_created_at": "2026-08-05 21:19:57"
+          },
+          "retained": false,
+          "source": "VPS",
+          "url": "https://vps789.com/openApi/cfIpApi"
+        },
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "json-record",
+          "metadata": {
+            "observed_at_timezone": null,
+            "source_context": "data/AllAvg/1/ip",
+            "source_fields": {
+              "avgScore": "263",
+              "code": "0",
+              "count": "0",
+              "createdTime": "2026-08-05 21:19:57",
+              "dxLatencyAvg": "84.88",
+              "dxPkgLostRateAvg": "0.0",
+              "dxScore": "84",
+              "ip": "172.64.150.64",
+              "ltLatencyAvg": "203.44",
+              "ltPkgLostRateAvg": "3.49",
+              "ltScore": "377",
+              "message": "true",
+              "ydLatencyAvg": "181.9",
+              "ydPkgLostRateAvg": "2.95",
+              "ydScore": "329"
+            },
+            "source_record_created_at": "2026-08-05 21:19:57"
+          },
+          "retained": false,
+          "source": "VPS",
+          "url": "https://vps789.com/openApi/cfIpApi"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "172.64.0.0/13",
+      "colos": [],
+      "family": 4,
+      "ip": "172.64.152.94",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "json-record",
+          "metadata": {
+            "carrier": "电信",
+            "observed_at_timezone": null,
+            "source_context": "data/CT/4/ip",
+            "source_fields": {
+              "avgScore": "227",
+              "code": "0",
+              "count": "0",
+              "createdTime": "2026-09-08 01:30:01",
+              "dxLatencyAvg": "86.88",
+              "dxPkgLostRateAvg": "0.0",
+              "dxScore": "86",
+              "ip": "172.64.152.94",
+              "ltLatencyAvg": "209.36",
+              "ltPkgLostRateAvg": "3.49",
+              "ltScore": "383",
+              "message": "true",
+              "ydLatencyAvg": "69.4",
+              "ydPkgLostRateAvg": "2.88",
+              "ydScore": "213"
+            },
+            "source_record_created_at": "2026-09-08 01:30:01"
+          },
+          "retained": false,
+          "source": "VPS",
+          "url": "https://vps789.com/openApi/cfIpApi"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "172.64.0.0/13",
+      "colos": [],
+      "family": 4,
+      "ip": "172.64.153.100",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "json-list",
+          "metadata": {
+            "carrier": "联通",
+            "observed_at": "1791609725",
+            "observed_at_timezone": "UTC",
+            "observed_at_utc": "2026-10-10T05:22:05+00:00",
+            "source_context": "Cf/result/liantong/0",
+            "source_fields": {
+              "update_time": "1791609725"
+            }
+          },
+          "retained": false,
+          "source": "FaaS",
+          "url": "https://raw.githubusercontent.com/xingpingcn/enhanced-FaaS-in-China/refs/heads/main/Cf.json"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "172.64.0.0/13",
+      "colos": [],
+      "family": 4,
+      "ip": "172.64.154.15",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "json-list",
+          "metadata": {
+            "carrier": "移动",
+            "observed_at": "1791609725",
+            "observed_at_timezone": "UTC",
+            "observed_at_utc": "2026-10-10T05:22:05+00:00",
+            "source_context": "Cf/result/yidong/1",
+            "source_fields": {
+              "update_time": "1791609725"
+            }
+          },
+          "retained": false,
+          "source": "FaaS",
+          "url": "https://raw.githubusercontent.com/xingpingcn/enhanced-FaaS-in-China/refs/heads/main/Cf.json"
         }
       ],
       "port": 443
@@ -1793,16 +1882,16 @@
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "json-list",
           "metadata": {
             "carrier": "移动",
-            "observed_at": "1791576083",
+            "observed_at": "1791609725",
             "observed_at_timezone": "UTC",
-            "observed_at_utc": "2026-10-09T20:01:23+00:00",
-            "source_context": "Cf/result/yidong/2",
+            "observed_at_utc": "2026-10-10T05:22:05+00:00",
+            "source_context": "Cf/result/yidong/0",
             "source_fields": {
-              "update_time": "1791576083"
+              "update_time": "1791609725"
             }
           },
           "retained": false,
@@ -1817,42 +1906,20 @@
       "cf_official_prefix": "172.64.0.0/13",
       "colos": [],
       "family": 4,
-      "ip": "172.64.154.44",
+      "ip": "172.64.154.71",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "text-list",
-          "metadata": {
-            "observed_at_timezone": null,
-            "source_fields": {}
-          },
-          "retained": false,
-          "source": "IPDB",
-          "url": "https://ipdb.api.030101.xyz/?type=bestcf"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "172.64.0.0/13",
-      "colos": [],
-      "family": 4,
-      "ip": "172.64.154.75",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "json-list",
           "metadata": {
-            "carrier": "联通",
-            "observed_at": "1791576083",
+            "carrier": "移动",
+            "observed_at": "1791609725",
             "observed_at_timezone": "UTC",
-            "observed_at_utc": "2026-10-09T20:01:23+00:00",
-            "source_context": "Cf/result/liantong/1",
+            "observed_at_utc": "2026-10-10T05:22:05+00:00",
+            "source_context": "Cf/result/yidong/2",
             "source_fields": {
-              "update_time": "1791576083"
+              "update_time": "1791609725"
             }
           },
           "retained": false,
@@ -1867,131 +1934,28 @@
       "cf_official_prefix": "172.64.0.0/13",
       "colos": [],
       "family": 4,
-      "ip": "172.64.155.16",
+      "ip": "172.64.155.46",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "text-list",
-          "metadata": {
-            "observed_at_timezone": null,
-            "source_fields": {}
-          },
-          "retained": false,
-          "source": "IPDB",
-          "url": "https://ipdb.api.030101.xyz/?type=bestcf"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "172.64.0.0/13",
-      "colos": [],
-      "family": 4,
-      "ip": "172.64.155.159",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "json-record",
-          "metadata": {
-            "observed_at_timezone": null,
-            "source_context": "data/AllAvg/0/ip",
-            "source_fields": {
-              "avgScore": "225",
-              "code": "0",
-              "count": "0",
-              "createdTime": "2026-09-07 01:30:01",
-              "dxLatencyAvg": "88.92",
-              "dxPkgLostRateAvg": "0.0",
-              "dxScore": "88",
-              "ip": "172.64.155.159",
-              "ltLatencyAvg": "208.11",
-              "ltPkgLostRateAvg": "2.53",
-              "ltScore": "334",
-              "message": "true",
-              "ydLatencyAvg": "68.51",
-              "ydPkgLostRateAvg": "3.7",
-              "ydScore": "253"
-            },
-            "source_record_created_at": "2026-09-07 01:30:01"
-          },
-          "retained": false,
-          "source": "VPS",
-          "url": "https://vps789.com/openApi/cfIpApi"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "172.64.0.0/13",
-      "colos": [],
-      "family": 4,
-      "ip": "172.64.156.99",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "json-record",
-          "metadata": {
-            "carrier": "电信",
-            "observed_at_timezone": null,
-            "source_context": "data/CT/2/ip",
-            "source_fields": {
-              "avgScore": "232",
-              "code": "0",
-              "count": "0",
-              "createdTime": "2026-09-12 01:30:01",
-              "dxLatencyAvg": "87.32",
-              "dxPkgLostRateAvg": "0.0",
-              "dxScore": "87",
-              "ip": "172.64.156.99",
-              "ltLatencyAvg": "205.14",
-              "ltPkgLostRateAvg": "3.08",
-              "ltScore": "359",
-              "message": "true",
-              "ydLatencyAvg": "65.88",
-              "ydPkgLostRateAvg": "3.7",
-              "ydScore": "250"
-            },
-            "source_record_created_at": "2026-09-12 01:30:01"
-          },
-          "retained": false,
-          "source": "VPS",
-          "url": "https://vps789.com/openApi/cfIpApi"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "172.64.0.0/13",
-      "colos": [],
-      "family": 4,
-      "ip": "172.64.159.78",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "loss": "0.00%",
             "loss_percent": 0.0,
-            "observed_at": "2026-10-10 04:49:19",
+            "observed_at": "2026-10-10 13:49:34",
             "observed_at_timezone": "unspecified",
-            "rtt": "69.11",
+            "rtt": "68.90",
             "source_fields": {
-              "IP地址": "★ 172.64.159.78 复制",
-              "下载速度": "62.83MB/s",
+              "IP地址": "★ 172.64.155.46 复制",
+              "下载速度": "0.08MB/s",
               "丢包率": "0.00%",
               "已发送": "4",
               "已接收": "4",
-              "平均延迟": "69.11",
-              "测速时间": "2026-10-10 04:49:19"
+              "平均延迟": "68.90",
+              "测速时间": "2026-10-10 13:49:34"
             },
-            "speed": "62.83MB/s"
+            "speed": "0.08MB/s"
           },
           "retained": false,
           "source": "ZXW",
@@ -2009,28 +1973,28 @@
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "json-record",
           "metadata": {
             "carrier": "电信",
             "observed_at_timezone": null,
-            "source_context": "data/CT/1/ip",
+            "source_context": "data/CT/3/ip",
             "source_fields": {
-              "avgScore": "239",
+              "avgScore": "236",
               "code": "0",
               "count": "0",
               "createdTime": "2026-08-03 01:35:49",
-              "dxLatencyAvg": "87.88",
+              "dxLatencyAvg": "87.86",
               "dxPkgLostRateAvg": "0.41",
               "dxScore": "108",
               "ip": "172.64.159.79",
-              "ltLatencyAvg": "210.55",
-              "ltPkgLostRateAvg": "3.08",
-              "ltScore": "364",
+              "ltLatencyAvg": "210.85",
+              "ltPkgLostRateAvg": "3.29",
+              "ltScore": "375",
               "message": "true",
-              "ydLatencyAvg": "70.81",
-              "ydPkgLostRateAvg": "3.49",
-              "ydScore": "245"
+              "ydLatencyAvg": "71.88",
+              "ydPkgLostRateAvg": "3.08",
+              "ydScore": "225"
             },
             "source_record_created_at": "2026-08-03 01:35:49"
           },
@@ -2039,27 +2003,28 @@
           "url": "https://vps789.com/openApi/cfIpApi"
         },
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "json-record",
           "metadata": {
+            "carrier": "移动",
             "observed_at_timezone": null,
-            "source_context": "data/AllAvg/2/ip",
+            "source_context": "data/CM/3/ip",
             "source_fields": {
-              "avgScore": "239",
+              "avgScore": "236",
               "code": "0",
               "count": "0",
               "createdTime": "2026-08-03 01:35:49",
-              "dxLatencyAvg": "87.88",
+              "dxLatencyAvg": "87.86",
               "dxPkgLostRateAvg": "0.41",
               "dxScore": "108",
               "ip": "172.64.159.79",
-              "ltLatencyAvg": "210.55",
-              "ltPkgLostRateAvg": "3.08",
-              "ltScore": "364",
+              "ltLatencyAvg": "210.85",
+              "ltPkgLostRateAvg": "3.29",
+              "ltScore": "375",
               "message": "true",
-              "ydLatencyAvg": "70.81",
-              "ydPkgLostRateAvg": "3.49",
-              "ydScore": "245"
+              "ydLatencyAvg": "71.88",
+              "ydPkgLostRateAvg": "3.08",
+              "ydScore": "225"
             },
             "source_record_created_at": "2026-08-03 01:35:49"
           },
@@ -2075,28 +2040,28 @@
       "cf_official_prefix": "172.64.0.0/13",
       "colos": [],
       "family": 4,
-      "ip": "172.64.229.126",
+      "ip": "172.64.229.190",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "loss": "0.00%",
             "loss_percent": 0.0,
-            "observed_at": "2026-10-10 04:49:19",
+            "observed_at": "2026-10-10 13:49:34",
             "observed_at_timezone": "unspecified",
-            "rtt": "63.62",
+            "rtt": "64.20",
             "source_fields": {
-              "IP地址": "★ 172.64.229.126 复制",
-              "下载速度": "78.26MB/s",
+              "IP地址": "★ 172.64.229.190 复制",
+              "下载速度": "33.04MB/s",
               "丢包率": "0.00%",
               "已发送": "4",
               "已接收": "4",
-              "平均延迟": "63.62",
-              "测速时间": "2026-10-10 04:49:19"
+              "平均延迟": "64.20",
+              "测速时间": "2026-10-10 13:49:34"
             },
-            "speed": "78.26MB/s"
+            "speed": "33.04MB/s"
           },
           "retained": false,
           "source": "ZXW",
@@ -2114,15 +2079,15 @@
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "json-list",
           "metadata": {
-            "observed_at": "1791576083",
+            "observed_at": "1791609725",
             "observed_at_timezone": "UTC",
-            "observed_at_utc": "2026-10-09T20:01:23+00:00",
+            "observed_at_utc": "2026-10-10T05:22:05+00:00",
             "source_context": "Cf/result/default/0",
             "source_fields": {
-              "update_time": "1791576083"
+              "update_time": "1791609725"
             }
           },
           "retained": false,
@@ -2137,11 +2102,11 @@
       "cf_official_prefix": "2606:4700::/32",
       "colos": [],
       "family": 6,
-      "ip": "2606:4700::2a4c:2dd2:f2f9",
+      "ip": "2606:4700::631f:c6d7:592e:1786",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -2159,11 +2124,11 @@
       "cf_official_prefix": "2606:4700::/32",
       "colos": [],
       "family": 6,
-      "ip": "2606:4700::bf:2ad5:365f:54ed",
+      "ip": "2606:4700::63ee:95d7:cb23:eb94",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -2181,11 +2146,11 @@
       "cf_official_prefix": "2606:4700::/32",
       "colos": [],
       "family": 6,
-      "ip": "2606:4700::f4:a338:4731:e694",
+      "ip": "2606:4700:0:5d:9268:2ca:5850:da34",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -2203,11 +2168,11 @@
       "cf_official_prefix": "2606:4700::/32",
       "colos": [],
       "family": 6,
-      "ip": "2606:4700:0:6:3e95:40b2:3708:e6fa",
+      "ip": "2606:4700:0:a1:8e27:ec89:bcc5:b18a",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -2225,11 +2190,11 @@
       "cf_official_prefix": "2606:4700::/32",
       "colos": [],
       "family": 6,
-      "ip": "2606:4700:0:6:3e9f:7a99:47db:42e3",
+      "ip": "2606:4700:0:757b:3dc:5ab7:9d2e:9f76",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -2247,11 +2212,11 @@
       "cf_official_prefix": "2606:4700::/32",
       "colos": [],
       "family": 6,
-      "ip": "2606:4700:0:6:5b68:7ef1:829:bc7b",
+      "ip": "2606:4700:0:75e2:3cd:8466:3b2d:7f2b",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -2269,11 +2234,11 @@
       "cf_official_prefix": "2606:4700::/32",
       "colos": [],
       "family": 6,
-      "ip": "2606:4700:0:a4:4747:a8ff:3259:673a",
+      "ip": "2606:4700:0:75e2:c3f2:acfc:8103:5564",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -2291,11 +2256,11 @@
       "cf_official_prefix": "2606:4700::/32",
       "colos": [],
       "family": 6,
-      "ip": "2606:4700:0:5c68:dff7:33a7:2756:94fa",
+      "ip": "2606:4700:0:ee55:e50f:ed2a:977a:ae7c",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -2313,11 +2278,11 @@
       "cf_official_prefix": "2606:4700::/32",
       "colos": [],
       "family": 6,
-      "ip": "2606:4700:0:5c98:574f:5905:e7b6:31ea",
+      "ip": "2606:4700:0:eec8:b100:4033:2074:a232",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -2335,11 +2300,11 @@
       "cf_official_prefix": "2606:4700::/32",
       "colos": [],
       "family": 6,
-      "ip": "2606:4700:0:5c98:6d2d:d977:3aeb:bcc2",
+      "ip": "2606:4700:0:eec8:b1e3:e28:3e3:7e20",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -2359,190 +2324,30 @@
         "SIN"
       ],
       "family": 6,
-      "ip": "2606:4700:51::fede:3020",
+      "ip": "2606:4700:5c::3508:cb57",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "bandwidth": "5 MB",
             "carrier": "电信",
             "colo": "SIN",
             "colo_raw": "SIN",
-            "observed_at": "2026-10-10 04:15:56",
+            "observed_at": "2026-10-10 13:26:11",
             "observed_at_timezone": "unspecified",
-            "rtt": "65 毫秒",
-            "rtt_ms": 65.0,
+            "rtt": "64 毫秒",
+            "rtt_ms": 64.0,
             "source_fields": {
-              "优选地址": "2606:4700:51::fede:3020",
-              "峰值速度": "647 kB/s",
-              "往返延迟": "65 毫秒",
+              "优选地址": "2606:4700:5c::3508:cb57",
+              "峰值速度": "645 kB/s",
+              "往返延迟": "64 毫秒",
               "数据中心": "SIN",
-              "更新时间": "2026-10-10 04:15:56",
+              "更新时间": "2026-10-10 13:26:11",
               "线路名称": "电信",
               "网络带宽": "5 MB"
             },
-            "speed": "647 kB/s"
-          },
-          "retained": false,
-          "source": "WeTestV6",
-          "url": "https://www.wetest.vip/page/cloudflare/address_v6.html"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "2606:4700::/32",
-      "colos": [
-        "LAX"
-      ],
-      "family": 6,
-      "ip": "2606:4700:52::a796:1cec",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "html-table",
-          "metadata": {
-            "bandwidth": "5 MB",
-            "carrier": "联通",
-            "colo": "LAX",
-            "colo_raw": "LAX",
-            "observed_at": "2026-10-10 04:41:59",
-            "observed_at_timezone": "unspecified",
-            "rtt": "186 毫秒",
-            "rtt_ms": 186.0,
-            "source_fields": {
-              "优选地址": "2606:4700:52::a796:1cec",
-              "峰值速度": "644 kB/s",
-              "往返延迟": "186 毫秒",
-              "数据中心": "LAX",
-              "更新时间": "2026-10-10 04:41:59",
-              "线路名称": "联通",
-              "网络带宽": "5 MB"
-            },
-            "speed": "644 kB/s"
-          },
-          "retained": false,
-          "source": "WeTestV6",
-          "url": "https://www.wetest.vip/page/cloudflare/address_v6.html"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "2606:4700::/32",
-      "colos": [
-        "HKG"
-      ],
-      "family": 6,
-      "ip": "2606:4700:57::bf3b:270d",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "html-table",
-          "metadata": {
-            "bandwidth": "5 MB",
-            "carrier": "移动",
-            "colo": "HKG",
-            "colo_raw": "HKG",
-            "observed_at": "2026-10-10 04:36:52",
-            "observed_at_timezone": "unspecified",
-            "rtt": "48 毫秒",
-            "rtt_ms": 48.0,
-            "source_fields": {
-              "优选地址": "2606:4700:57::bf3b:270d",
-              "峰值速度": "647 kB/s",
-              "往返延迟": "48 毫秒",
-              "数据中心": "HKG",
-              "更新时间": "2026-10-10 04:36:52",
-              "线路名称": "移动",
-              "网络带宽": "5 MB"
-            },
-            "speed": "647 kB/s"
-          },
-          "retained": false,
-          "source": "WeTestV6",
-          "url": "https://www.wetest.vip/page/cloudflare/address_v6.html"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "2606:4700::/32",
-      "colos": [
-        "LAX"
-      ],
-      "family": 6,
-      "ip": "2606:4700:3002::5e9f:63f6",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "html-table",
-          "metadata": {
-            "bandwidth": "5 MB",
-            "carrier": "联通",
-            "colo": "LAX",
-            "colo_raw": "LAX",
-            "observed_at": "2026-10-10 03:45:03",
-            "observed_at_timezone": "unspecified",
-            "rtt": "180 毫秒",
-            "rtt_ms": 180.0,
-            "source_fields": {
-              "优选地址": "2606:4700:3002::5e9f:63f6",
-              "峰值速度": "645 kB/s",
-              "往返延迟": "180 毫秒",
-              "数据中心": "LAX",
-              "更新时间": "2026-10-10 03:45:03",
-              "线路名称": "联通",
-              "网络带宽": "5 MB"
-            },
-            "speed": "645 kB/s"
-          },
-          "retained": false,
-          "source": "WeTestV6",
-          "url": "https://www.wetest.vip/page/cloudflare/address_v6.html"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "2606:4700::/32",
-      "colos": [
-        "LAX"
-      ],
-      "family": 6,
-      "ip": "2606:4700:3011::1a7f:9106",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "html-table",
-          "metadata": {
-            "bandwidth": "5 MB",
-            "carrier": "联通",
-            "colo": "LAX",
-            "colo_raw": "LAX",
-            "observed_at": "2026-10-10 04:31:04",
-            "observed_at_timezone": "unspecified",
-            "rtt": "184 毫秒",
-            "rtt_ms": 184.0,
-            "source_fields": {
-              "优选地址": "2606:4700:3011::1a7f:9106",
-              "峰值速度": "645 kB/s",
-              "往返延迟": "184 毫秒",
-              "数据中心": "LAX",
-              "更新时间": "2026-10-10 04:31:04",
-              "线路名称": "联通",
-              "网络带宽": "5 MB"
-            },
             "speed": "645 kB/s"
           },
           "retained": false,
@@ -2557,11 +2362,11 @@
       "cf_official_prefix": "2606:4700::/32",
       "colos": [],
       "family": 6,
-      "ip": "2606:4700:3036:0:a36a:4a23:4a60:9f3f",
+      "ip": "2606:4700:3036::ce:d6ea",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -2581,11 +2386,11 @@
       "cf_official_prefix": "2606:4700::/32",
       "colos": [],
       "family": 6,
-      "ip": "2606:4700:3036:ef:3f32:9601:b705:e94b",
+      "ip": "2606:4700:3036:0:a36a:4aa4:75d9:9f75",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -2605,11 +2410,11 @@
       "cf_official_prefix": "2606:4700::/32",
       "colos": [],
       "family": 6,
-      "ip": "2606:4700:3036:ef:3f32:a9c6:39c4:9ae3",
+      "ip": "2606:4700:3036:ef:92f:be51:8695:9fc5",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -2629,35 +2434,11 @@
       "cf_official_prefix": "2606:4700::/32",
       "colos": [],
       "family": 6,
-      "ip": "2606:4700:3036:ef:db9e:eecc:caef:9d4a",
+      "ip": "2606:4700:3036:6ed4:260:e3e9:a48c:8437",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "text-list",
-          "metadata": {
-            "observed_at_timezone": null,
-            "source_fields": {
-              "list_label": "CMCC-IPV6"
-            }
-          },
-          "retained": false,
-          "source": "CMLiussv6",
-          "url": "https://addressesapi.090227.xyz/cmcc-ipv6"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "2606:4700::/32",
-      "colos": [],
-      "family": 6,
-      "ip": "2606:4700:3036:6ed4:e1ed:36:7204:2031",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -2681,7 +2462,31 @@
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "text-list",
+          "metadata": {
+            "observed_at_timezone": null,
+            "source_fields": {
+              "list_label": "CMCC-IPV6"
+            }
+          },
+          "retained": false,
+          "source": "CMLiussv6",
+          "url": "https://addressesapi.090227.xyz/cmcc-ipv6"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "2606:4700::/32",
+      "colos": [],
+      "family": 6,
+      "ip": "2606:4700:3036:6ed4:ffdf:15bf:7d77:5f52",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "text-list",
           "metadata": {
             "observed_at_timezone": null,
@@ -2700,34 +2505,34 @@
       "anycast_per_address_verified": false,
       "cf_official_prefix": "2606:4700::/32",
       "colos": [
-        "HKG"
+        "SIN"
       ],
       "family": 6,
-      "ip": "2606:4700:90d7::daa0:d014",
+      "ip": "2606:4700:4407::5c7e:f863",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "bandwidth": "5 MB",
-            "carrier": "移动",
-            "colo": "HKG",
-            "colo_raw": "HKG",
-            "observed_at": "2026-10-10 04:31:52",
+            "carrier": "电信",
+            "colo": "SIN",
+            "colo_raw": "SIN",
+            "observed_at": "2026-10-10 13:21:16",
             "observed_at_timezone": "unspecified",
-            "rtt": "80 毫秒",
-            "rtt_ms": 80.0,
+            "rtt": "65 毫秒",
+            "rtt_ms": 65.0,
             "source_fields": {
-              "优选地址": "2606:4700:90d7::daa0:d014",
-              "峰值速度": "647 kB/s",
-              "往返延迟": "80 毫秒",
-              "数据中心": "HKG",
-              "更新时间": "2026-10-10 04:31:52",
-              "线路名称": "移动",
+              "优选地址": "2606:4700:4407::5c7e:f863",
+              "峰值速度": "645 kB/s",
+              "往返延迟": "65 毫秒",
+              "数据中心": "SIN",
+              "更新时间": "2026-10-10 13:21:16",
+              "线路名称": "电信",
               "网络带宽": "5 MB"
             },
-            "speed": "647 kB/s"
+            "speed": "645 kB/s"
           },
           "retained": false,
           "source": "WeTestV6",
@@ -2740,30 +2545,30 @@
       "anycast_per_address_verified": false,
       "cf_official_prefix": "2606:4700::/32",
       "colos": [
-        "FRA"
+        "SIN"
       ],
       "family": 6,
-      "ip": "2606:4700:9766::3e04:605c",
+      "ip": "2606:4700:440b::3e70:e397",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "bandwidth": "5 MB",
             "carrier": "电信",
-            "colo": "FRA",
-            "colo_raw": "FRA",
-            "observed_at": "2026-10-10 03:46:55",
+            "colo": "SIN",
+            "colo_raw": "SIN",
+            "observed_at": "2026-10-10 11:36:03",
             "observed_at_timezone": "unspecified",
-            "rtt": "214 毫秒",
-            "rtt_ms": 214.0,
+            "rtt": "65 毫秒",
+            "rtt_ms": 65.0,
             "source_fields": {
-              "优选地址": "2606:4700:9766::3e04:605c",
+              "优选地址": "2606:4700:440b::3e70:e397",
               "峰值速度": "647 kB/s",
-              "往返延迟": "214 毫秒",
-              "数据中心": "FRA",
-              "更新时间": "2026-10-10 03:46:55",
+              "往返延迟": "65 毫秒",
+              "数据中心": "SIN",
+              "更新时间": "2026-10-10 11:36:03",
               "线路名称": "电信",
               "网络带宽": "5 MB"
             },
@@ -2783,27 +2588,27 @@
         "HKG"
       ],
       "family": 6,
-      "ip": "2606:4700:9a91::1e94:6477",
+      "ip": "2606:4700:8395::8f96:1a73",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "bandwidth": "5 MB",
             "carrier": "移动",
             "colo": "HKG",
             "colo_raw": "HKG",
-            "observed_at": "2026-10-10 04:42:55",
+            "observed_at": "2026-10-10 13:40:12",
             "observed_at_timezone": "unspecified",
             "rtt": "85 毫秒",
             "rtt_ms": 85.0,
             "source_fields": {
-              "优选地址": "2606:4700:9a91::1e94:6477",
+              "优选地址": "2606:4700:8395::8f96:1a73",
               "峰值速度": "647 kB/s",
               "往返延迟": "85 毫秒",
               "数据中心": "HKG",
-              "更新时间": "2026-10-10 04:42:55",
+              "更新时间": "2026-10-10 13:40:12",
               "线路名称": "移动",
               "网络带宽": "5 MB"
             },
@@ -2820,150 +2625,30 @@
       "anycast_per_address_verified": false,
       "cf_official_prefix": "2606:4700::/32",
       "colos": [
-        "HKG"
+        "AMS"
       ],
       "family": 6,
-      "ip": "2606:4700:9ad4::d3fa:dfeb",
+      "ip": "2606:4700:90d4::5aa4:3572",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "html-table",
-          "metadata": {
-            "bandwidth": "5 MB",
-            "carrier": "移动",
-            "colo": "HKG",
-            "colo_raw": "HKG",
-            "observed_at": "2026-10-10 04:38:53",
-            "observed_at_timezone": "unspecified",
-            "rtt": "80 毫秒",
-            "rtt_ms": 80.0,
-            "source_fields": {
-              "优选地址": "2606:4700:9ad4::d3fa:dfeb",
-              "峰值速度": "644 kB/s",
-              "往返延迟": "80 毫秒",
-              "数据中心": "HKG",
-              "更新时间": "2026-10-10 04:38:53",
-              "线路名称": "移动",
-              "网络带宽": "5 MB"
-            },
-            "speed": "644 kB/s"
-          },
-          "retained": false,
-          "source": "WeTestV6",
-          "url": "https://www.wetest.vip/page/cloudflare/address_v6.html"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "2606:4700::/32",
-      "colos": [
-        "HKG"
-      ],
-      "family": 6,
-      "ip": "2606:4700:9ad6::12e3:9e1b",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "html-table",
-          "metadata": {
-            "bandwidth": "5 MB",
-            "carrier": "移动",
-            "colo": "HKG",
-            "colo_raw": "HKG",
-            "observed_at": "2026-10-10 04:36:52",
-            "observed_at_timezone": "unspecified",
-            "rtt": "80 毫秒",
-            "rtt_ms": 80.0,
-            "source_fields": {
-              "优选地址": "2606:4700:9ad6::12e3:9e1b",
-              "峰值速度": "647 kB/s",
-              "往返延迟": "80 毫秒",
-              "数据中心": "HKG",
-              "更新时间": "2026-10-10 04:36:52",
-              "线路名称": "移动",
-              "网络带宽": "5 MB"
-            },
-            "speed": "647 kB/s"
-          },
-          "retained": false,
-          "source": "WeTestV6",
-          "url": "https://www.wetest.vip/page/cloudflare/address_v6.html"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "2606:4700::/32",
-      "colos": [
-        "FRA"
-      ],
-      "family": 6,
-      "ip": "2606:4700:9b07::7f99:55d9",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
-          "format": "html-table",
-          "metadata": {
-            "bandwidth": "5 MB",
-            "carrier": "电信",
-            "colo": "FRA",
-            "colo_raw": "FRA",
-            "observed_at": "2026-10-10 04:38:53",
-            "observed_at_timezone": "unspecified",
-            "rtt": "213 毫秒",
-            "rtt_ms": 213.0,
-            "source_fields": {
-              "优选地址": "2606:4700:9b07::7f99:55d9",
-              "峰值速度": "647 kB/s",
-              "往返延迟": "213 毫秒",
-              "数据中心": "FRA",
-              "更新时间": "2026-10-10 04:38:53",
-              "线路名称": "电信",
-              "网络带宽": "5 MB"
-            },
-            "speed": "647 kB/s"
-          },
-          "retained": false,
-          "source": "WeTestV6",
-          "url": "https://www.wetest.vip/page/cloudflare/address_v6.html"
-        }
-      ],
-      "port": 443
-    },
-    {
-      "anycast_per_address_verified": false,
-      "cf_official_prefix": "2803:f800::/32",
-      "colos": [
-        "LAX"
-      ],
-      "family": 6,
-      "ip": "2803:f800:51::e7a7:5244",
-      "network_class": "cloudflare_published_proxy_range",
-      "observations": [
-        {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "bandwidth": "5 MB",
             "carrier": "联通",
-            "colo": "LAX",
-            "colo_raw": "LAX",
-            "observed_at": "2026-10-10 02:45:55",
+            "colo": "AMS",
+            "colo_raw": "AMS",
+            "observed_at": "2026-10-10 12:07:59",
             "observed_at_timezone": "unspecified",
-            "rtt": "197 毫秒",
-            "rtt_ms": 197.0,
+            "rtt": "278 毫秒",
+            "rtt_ms": 278.0,
             "source_fields": {
-              "优选地址": "2803:f800:51::e7a7:5244",
+              "优选地址": "2606:4700:90d4::5aa4:3572",
               "峰值速度": "647 kB/s",
-              "往返延迟": "197 毫秒",
-              "数据中心": "LAX",
-              "更新时间": "2026-10-10 02:45:55",
+              "往返延迟": "278 毫秒",
+              "数据中心": "AMS",
+              "更新时间": "2026-10-10 12:07:59",
               "线路名称": "联通",
               "网络带宽": "5 MB"
             },
@@ -2978,33 +2663,73 @@
     },
     {
       "anycast_per_address_verified": false,
-      "cf_official_prefix": "2a06:98c0::/29",
+      "cf_official_prefix": "2606:4700::/32",
       "colos": [
-        "SIN"
+        "AMS"
       ],
       "family": 6,
-      "ip": "2a06:98c1:51::fc80:8c8e",
+      "ip": "2606:4700:91b9::8a6c:d5a4",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "bandwidth": "5 MB",
-            "carrier": "电信",
-            "colo": "SIN",
-            "colo_raw": "SIN",
-            "observed_at": "2026-10-10 04:30:57",
+            "carrier": "联通",
+            "colo": "AMS",
+            "colo_raw": "AMS",
+            "observed_at": "2026-10-10 13:45:06",
             "observed_at_timezone": "unspecified",
-            "rtt": "63 毫秒",
-            "rtt_ms": 63.0,
+            "rtt": "276 毫秒",
+            "rtt_ms": 276.0,
             "source_fields": {
-              "优选地址": "2a06:98c1:51::fc80:8c8e",
+              "优选地址": "2606:4700:91b9::8a6c:d5a4",
+              "峰值速度": "648 kB/s",
+              "往返延迟": "276 毫秒",
+              "数据中心": "AMS",
+              "更新时间": "2026-10-10 13:45:06",
+              "线路名称": "联通",
+              "网络带宽": "5 MB"
+            },
+            "speed": "648 kB/s"
+          },
+          "retained": false,
+          "source": "WeTestV6",
+          "url": "https://www.wetest.vip/page/cloudflare/address_v6.html"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "2606:4700::/32",
+      "colos": [
+        "HKG"
+      ],
+      "family": 6,
+      "ip": "2606:4700:9643::85b7:21c4",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "html-table",
+          "metadata": {
+            "bandwidth": "5 MB",
+            "carrier": "移动",
+            "colo": "HKG",
+            "colo_raw": "HKG",
+            "observed_at": "2026-10-10 13:33:07",
+            "observed_at_timezone": "unspecified",
+            "rtt": "81 毫秒",
+            "rtt_ms": 81.0,
+            "source_fields": {
+              "优选地址": "2606:4700:9643::85b7:21c4",
               "峰值速度": "647 kB/s",
-              "往返延迟": "63 毫秒",
-              "数据中心": "SIN",
-              "更新时间": "2026-10-10 04:30:57",
-              "线路名称": "电信",
+              "往返延迟": "81 毫秒",
+              "数据中心": "HKG",
+              "更新时间": "2026-10-10 13:33:07",
+              "线路名称": "移动",
               "网络带宽": "5 MB"
             },
             "speed": "647 kB/s"
@@ -3018,32 +2743,112 @@
     },
     {
       "anycast_per_address_verified": false,
-      "cf_official_prefix": "2a06:98c0::/29",
+      "cf_official_prefix": "2606:4700::/32",
       "colos": [
-        "LAX"
+        "HKG"
       ],
       "family": 6,
-      "ip": "2a06:98c1:52::8a0b:40cf",
+      "ip": "2606:4700:99e8::62a8:34d4",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "html-table",
+          "metadata": {
+            "bandwidth": "5 MB",
+            "carrier": "移动",
+            "colo": "HKG",
+            "colo_raw": "HKG",
+            "observed_at": "2026-10-10 13:43:05",
+            "observed_at_timezone": "unspecified",
+            "rtt": "84 毫秒",
+            "rtt_ms": 84.0,
+            "source_fields": {
+              "优选地址": "2606:4700:99e8::62a8:34d4",
+              "峰值速度": "647 kB/s",
+              "往返延迟": "84 毫秒",
+              "数据中心": "HKG",
+              "更新时间": "2026-10-10 13:43:05",
+              "线路名称": "移动",
+              "网络带宽": "5 MB"
+            },
+            "speed": "647 kB/s"
+          },
+          "retained": false,
+          "source": "WeTestV6",
+          "url": "https://www.wetest.vip/page/cloudflare/address_v6.html"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "2606:4700::/32",
+      "colos": [
+        "AMS"
+      ],
+      "family": 6,
+      "ip": "2606:4700:99eb::4ea7:e8c",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "bandwidth": "5 MB",
             "carrier": "联通",
-            "colo": "LAX",
-            "colo_raw": "LAX",
-            "observed_at": "2026-10-10 04:28:57",
+            "colo": "AMS",
+            "colo_raw": "AMS",
+            "observed_at": "2026-10-10 11:00:06",
             "observed_at_timezone": "unspecified",
-            "rtt": "187 毫秒",
-            "rtt_ms": 187.0,
+            "rtt": "275 毫秒",
+            "rtt_ms": 275.0,
             "source_fields": {
-              "优选地址": "2a06:98c1:52::8a0b:40cf",
+              "优选地址": "2606:4700:99eb::4ea7:e8c",
+              "峰值速度": "647 kB/s",
+              "往返延迟": "275 毫秒",
+              "数据中心": "AMS",
+              "更新时间": "2026-10-10 11:00:06",
+              "线路名称": "联通",
+              "网络带宽": "5 MB"
+            },
+            "speed": "647 kB/s"
+          },
+          "retained": false,
+          "source": "WeTestV6",
+          "url": "https://www.wetest.vip/page/cloudflare/address_v6.html"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "2606:4700::/32",
+      "colos": [
+        "AMS"
+      ],
+      "family": 6,
+      "ip": "2606:4700:9a65::673a:4ddc",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "html-table",
+          "metadata": {
+            "bandwidth": "5 MB",
+            "carrier": "联通",
+            "colo": "AMS",
+            "colo_raw": "AMS",
+            "observed_at": "2026-10-10 13:34:34",
+            "observed_at_timezone": "unspecified",
+            "rtt": "229 毫秒",
+            "rtt_ms": 229.0,
+            "source_fields": {
+              "优选地址": "2606:4700:9a65::673a:4ddc",
               "峰值速度": "645 kB/s",
-              "往返延迟": "187 毫秒",
-              "数据中心": "LAX",
-              "更新时间": "2026-10-10 04:28:57",
+              "往返延迟": "229 毫秒",
+              "数据中心": "AMS",
+              "更新时间": "2026-10-10 13:34:34",
               "线路名称": "联通",
               "网络带宽": "5 MB"
             },
@@ -3058,32 +2863,192 @@
     },
     {
       "anycast_per_address_verified": false,
+      "cf_official_prefix": "2606:4700::/32",
+      "colos": [
+        "HKG"
+      ],
+      "family": 6,
+      "ip": "2606:4700:9a69::4c69:9d23",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "html-table",
+          "metadata": {
+            "bandwidth": "5 MB",
+            "carrier": "移动",
+            "colo": "HKG",
+            "colo_raw": "HKG",
+            "observed_at": "2026-10-10 13:18:16",
+            "observed_at_timezone": "unspecified",
+            "rtt": "81 毫秒",
+            "rtt_ms": 81.0,
+            "source_fields": {
+              "优选地址": "2606:4700:9a69::4c69:9d23",
+              "峰值速度": "645 kB/s",
+              "往返延迟": "81 毫秒",
+              "数据中心": "HKG",
+              "更新时间": "2026-10-10 13:18:16",
+              "线路名称": "移动",
+              "网络带宽": "5 MB"
+            },
+            "speed": "645 kB/s"
+          },
+          "retained": false,
+          "source": "WeTestV6",
+          "url": "https://www.wetest.vip/page/cloudflare/address_v6.html"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "2606:4700::/32",
+      "colos": [
+        "AMS"
+      ],
+      "family": 6,
+      "ip": "2606:4700:9ad3::37a6:dc2d",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "html-table",
+          "metadata": {
+            "bandwidth": "5 MB",
+            "carrier": "联通",
+            "colo": "AMS",
+            "colo_raw": "AMS",
+            "observed_at": "2026-10-10 11:20:58",
+            "observed_at_timezone": "unspecified",
+            "rtt": "277 毫秒",
+            "rtt_ms": 277.0,
+            "source_fields": {
+              "优选地址": "2606:4700:9ad3::37a6:dc2d",
+              "峰值速度": "647 kB/s",
+              "往返延迟": "277 毫秒",
+              "数据中心": "AMS",
+              "更新时间": "2026-10-10 11:20:58",
+              "线路名称": "联通",
+              "网络带宽": "5 MB"
+            },
+            "speed": "647 kB/s"
+          },
+          "retained": false,
+          "source": "WeTestV6",
+          "url": "https://www.wetest.vip/page/cloudflare/address_v6.html"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "2606:4700::/32",
+      "colos": [
+        "HKG"
+      ],
+      "family": 6,
+      "ip": "2606:4700:9c6a::693c:28b9",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "html-table",
+          "metadata": {
+            "bandwidth": "5 MB",
+            "carrier": "移动",
+            "colo": "HKG",
+            "colo_raw": "HKG",
+            "observed_at": "2026-10-10 12:11:01",
+            "observed_at_timezone": "unspecified",
+            "rtt": "79 毫秒",
+            "rtt_ms": 79.0,
+            "source_fields": {
+              "优选地址": "2606:4700:9c6a::693c:28b9",
+              "峰值速度": "647 kB/s",
+              "往返延迟": "79 毫秒",
+              "数据中心": "HKG",
+              "更新时间": "2026-10-10 12:11:01",
+              "线路名称": "移动",
+              "网络带宽": "5 MB"
+            },
+            "speed": "647 kB/s"
+          },
+          "retained": false,
+          "source": "WeTestV6",
+          "url": "https://www.wetest.vip/page/cloudflare/address_v6.html"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
       "cf_official_prefix": "2a06:98c0::/29",
       "colos": [
         "SIN"
       ],
       "family": 6,
-      "ip": "2a06:98c1:3104::2d5f:1601",
+      "ip": "2a06:98c1:50::4d8:3a41",
       "network_class": "cloudflare_published_proxy_range",
       "observations": [
         {
-          "fetched_at": "2026-10-09T20:53:50+00:00",
+          "fetched_at": "2026-10-10T05:51:51+00:00",
           "format": "html-table",
           "metadata": {
             "bandwidth": "5 MB",
             "carrier": "电信",
             "colo": "SIN",
             "colo_raw": "SIN",
-            "observed_at": "2026-10-10 03:26:23",
+            "observed_at": "2026-10-10 13:41:15",
             "observed_at_timezone": "unspecified",
-            "rtt": "64 毫秒",
-            "rtt_ms": 64.0,
+            "rtt": "65 毫秒",
+            "rtt_ms": 65.0,
             "source_fields": {
-              "优选地址": "2a06:98c1:3104::2d5f:1601",
+              "优选地址": "2a06:98c1:50::4d8:3a41",
               "峰值速度": "647 kB/s",
-              "往返延迟": "64 毫秒",
+              "往返延迟": "65 毫秒",
               "数据中心": "SIN",
-              "更新时间": "2026-10-10 03:26:23",
+              "更新时间": "2026-10-10 13:41:15",
+              "线路名称": "电信",
+              "网络带宽": "5 MB"
+            },
+            "speed": "647 kB/s"
+          },
+          "retained": false,
+          "source": "WeTestV6",
+          "url": "https://www.wetest.vip/page/cloudflare/address_v6.html"
+        }
+      ],
+      "port": 443
+    },
+    {
+      "anycast_per_address_verified": false,
+      "cf_official_prefix": "2a06:98c0::/29",
+      "colos": [
+        "SIN"
+      ],
+      "family": 6,
+      "ip": "2a06:98c1:3101::4f3f:74d6",
+      "network_class": "cloudflare_published_proxy_range",
+      "observations": [
+        {
+          "fetched_at": "2026-10-10T05:51:51+00:00",
+          "format": "html-table",
+          "metadata": {
+            "bandwidth": "5 MB",
+            "carrier": "电信",
+            "colo": "SIN",
+            "colo_raw": "SIN",
+            "observed_at": "2026-10-10 13:46:03",
+            "observed_at_timezone": "unspecified",
+            "rtt": "65 毫秒",
+            "rtt_ms": 65.0,
+            "source_fields": {
+              "优选地址": "2a06:98c1:3101::4f3f:74d6",
+              "峰值速度": "647 kB/s",
+              "往返延迟": "65 毫秒",
+              "数据中心": "SIN",
+              "更新时间": "2026-10-10 13:46:03",
               "线路名称": "电信",
               "网络带宽": "5 MB"
             },
@@ -3099,15 +3064,15 @@
   ],
   "colo_evidence": "Source observations only; not the collector's current or the reader's local edge.",
   "counts": {
-    "fresh_observations": 95,
-    "ipv4": 61,
+    "fresh_observations": 94,
+    "ipv4": 60,
     "ipv6": 31,
     "retained_observations": 0,
     "source_success": 9,
     "source_total": 11
   },
   "evidence_limit": "Official range membership and published source observations; not per-address Anycast verification or local reachability.",
-  "generated_at": "2026-10-09T20:53:50+00:00",
+  "generated_at": "2026-10-10T05:51:51+00:00",
   "range_sources": [
     {
       "family": 4,
@@ -3152,58 +3117,58 @@
   "schema_version": 1,
   "sources": [
     {
-      "accepted": 3,
-      "attempted_at": "2026-10-09T20:53:50+00:00",
-      "body_sha256": "4beea861e73079b71330b46cfe925594ba499cf571f8ad52a09747509eab827b",
-      "html_row_count": 4,
+      "accepted": 2,
+      "attempted_at": "2026-10-10T05:51:51+00:00",
+      "body_sha256": "29cab4421b4319fe632a60f3e7f04d490467501786461cd6efd7a1e1a65a4ac4",
+      "html_row_count": 3,
       "html_table_count": 1,
       "html_title": "CF优选IP - Cloudflare优选IP测速与优选工具",
       "ok": true,
       "outside_official_ranges": 0,
-      "parsed": 3,
-      "response_bytes": 4344,
+      "parsed": 2,
+      "response_bytes": 3870,
       "source": "ZXW",
       "url": "https://ip.164746.xyz"
     },
     {
       "accepted": 10,
-      "attempted_at": "2026-10-09T20:53:50+00:00",
-      "body_sha256": "3b58e632bcde342b2e0c22522e4b481da13b2ce01bc7d9117dc7f4f6aa3ec092",
+      "attempted_at": "2026-10-10T05:51:51+00:00",
+      "body_sha256": "aa07dacd5cb3d5fe85ed8ef5ccf34ba616c82b8f5d139e63300606bdf9bc7859",
       "ok": true,
       "outside_official_ranges": 0,
       "parsed": 10,
-      "response_bytes": 142,
+      "response_bytes": 141,
       "source": "IPDB",
       "url": "https://ipdb.api.030101.xyz/?type=bestcf"
     },
     {
       "accepted": 15,
-      "attempted_at": "2026-10-09T20:53:50+00:00",
-      "body_sha256": "dbff5d2c84ae2488c9b8c146f69eeac9a4a17abcd2b952a5a97340df8cc09cda",
+      "attempted_at": "2026-10-10T05:51:51+00:00",
+      "body_sha256": "568499cb05a6f74b1e85f46f7aca0673705c775bbef26fc145c7d90b26a4e018",
       "html_row_count": 16,
       "html_table_count": 1,
       "html_title": null,
       "ok": true,
       "outside_official_ranges": 0,
       "parsed": 15,
-      "response_bytes": 21786,
+      "response_bytes": 21790,
       "source": "WeTestV6",
       "url": "https://www.wetest.vip/page/cloudflare/address_v6.html"
     },
     {
       "accepted": 10,
-      "attempted_at": "2026-10-09T20:53:50+00:00",
-      "body_sha256": "894333fe47eae11aac0caae8a67d1f07a8de594dc840298db31fdb6abf6b2e1e",
+      "attempted_at": "2026-10-10T05:51:51+00:00",
+      "body_sha256": "3af6fd01f311bc14ae853bc7e50d0358707b228ac395ff7f837b0d0ff4dc8e81",
       "ok": true,
       "outside_official_ranges": 0,
       "parsed": 10,
-      "response_bytes": 330,
+      "response_bytes": 348,
       "source": "IPDBv6",
       "url": "https://ipdb.api.030101.xyz/?type=bestcfv6"
     },
     {
       "accepted": 0,
-      "attempted_at": "2026-10-09T20:53:50+00:00",
+      "attempted_at": "2026-10-10T05:51:51+00:00",
       "body_sha256": "f42cf9737c3f2315578bf29c43d02be62844cb2280450dad5afc6e3fd0a01073",
       "error": "ValueError: no supported published address records",
       "html_row_count": 1,
@@ -3218,7 +3183,7 @@
     },
     {
       "accepted": 0,
-      "attempted_at": "2026-10-09T20:53:50+00:00",
+      "attempted_at": "2026-10-10T05:51:51+00:00",
       "error": "URLError: <urlopen error [Errno -2] Name or service not known>",
       "ok": false,
       "outside_official_ranges": 0,
@@ -3228,8 +3193,8 @@
     },
     {
       "accepted": 20,
-      "attempted_at": "2026-10-09T20:53:50+00:00",
-      "body_sha256": "006848cf0b33bab6f89930db5c7acf930d15568798f0209ba9c0fb28a2df3b30",
+      "attempted_at": "2026-10-10T05:51:51+00:00",
+      "body_sha256": "a1d517e77fab469ffd4accd77999669542fcb99bc775a46fd22e8031895ab02f",
       "ok": true,
       "outside_official_ranges": 0,
       "parsed": 20,
@@ -3239,44 +3204,44 @@
     },
     {
       "accepted": 15,
-      "attempted_at": "2026-10-09T20:53:50+00:00",
-      "body_sha256": "765d4cb7e7ba69d249803c3f2ad272fc85f04b87fe53a6356eb8613a9d73cf4f",
+      "attempted_at": "2026-10-10T05:51:51+00:00",
+      "body_sha256": "23a004cf0f14c4a692acdaf92c4314a9f9f89fc6825cbf2595f359cc3dc5d569",
       "html_row_count": 16,
       "html_table_count": 1,
       "html_title": null,
       "ok": true,
       "outside_official_ranges": 0,
       "parsed": 15,
-      "response_bytes": 21633,
+      "response_bytes": 21637,
       "source": "WeTest",
       "url": "https://www.wetest.vip/page/cloudflare/address_v4.html"
     },
     {
       "accepted": 6,
-      "attempted_at": "2026-10-09T20:53:50+00:00",
-      "body_sha256": "95382327ec0981086a009ecd1b0fa8dcfe81addc5f03eb4d6b89edb6ee6edadd",
+      "attempted_at": "2026-10-10T05:51:51+00:00",
+      "body_sha256": "f049b50976847520364e097fecc20267fd558ae23f34238611c3466eda6867f9",
       "ok": true,
       "outside_official_ranges": 0,
       "parsed": 6,
-      "response_bytes": 112,
+      "response_bytes": 111,
       "source": "CMLiuss",
       "url": "https://addressesapi.090227.xyz/ct"
     },
     {
       "accepted": 6,
-      "attempted_at": "2026-10-09T20:53:50+00:00",
-      "body_sha256": "7ead4f6f701437f07719b677059ffab77a89dc2d8813bc0ddc431ead8dc72a33",
+      "attempted_at": "2026-10-10T05:51:51+00:00",
+      "body_sha256": "8ce52858d9ce49b721527138bbb8ba550f02c3937110ebcb24820badcb15ebd7",
       "ok": true,
       "outside_official_ranges": 0,
       "parsed": 6,
-      "response_bytes": 300,
+      "response_bytes": 288,
       "source": "CMLiussv6",
       "url": "https://addressesapi.090227.xyz/cmcc-ipv6"
     },
     {
       "accepted": 10,
-      "attempted_at": "2026-10-09T20:53:50+00:00",
-      "body_sha256": "673259d0471695513fbfde168f7e4ec1870139b8923c34210dd17a4fac70dd42",
+      "attempted_at": "2026-10-10T05:51:51+00:00",
+      "body_sha256": "3cfc9e589b8520d93bbe8d200b42e86724a7733dafeb0f998d89354a921a2c6a",
       "ok": true,
       "outside_official_ranges": 0,
       "parsed": 10,
